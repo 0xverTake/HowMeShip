@@ -1,6 +1,8 @@
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
-const shipDisplayService = require('../services/shipDisplayService');
+const UexShipDisplayService = require('../services/uexShipDisplayService');
 const Database = require('../config/database');
+
+const uexShipDisplayService = new UexShipDisplayService();
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -23,7 +25,7 @@ module.exports = {
                 .setRequired(false)
         ),
 
-    async autocomplete(interaction) {
+    async autocomplete(interaction, database) {
         try {
             const focusedValue = interaction.options.getFocused().toLowerCase();
             
@@ -31,14 +33,7 @@ module.exports = {
                 return await interaction.respond([]);
             }
 
-            const db = Database.getInstance();
-            const ships = db.prepare(`
-                SELECT DISTINCT name 
-                FROM ships 
-                WHERE LOWER(name) LIKE ? 
-                ORDER BY name 
-                LIMIT 25
-            `).all(`%${focusedValue}%`);
+            const ships = await database.searchShips(focusedValue, 25);
 
             const choices = ships.map(ship => ({
                 name: ship.name,
@@ -52,7 +47,7 @@ module.exports = {
         }
     },
 
-    async execute(interaction) {
+    async execute(interaction, database) {
         const shipName = interaction.options.getString('name');
         const compact = interaction.options.getBoolean('compact') || false;
         const noImage = interaction.options.getBoolean('no_image') || false;
@@ -60,13 +55,13 @@ module.exports = {
         try {
             await interaction.deferReply();
 
-            // Rechercher le vaisseau dans la base de données
-            const db = Database.getInstance();
-            const ship = db.prepare(`
-                SELECT * FROM ships 
-                WHERE LOWER(name) = LOWER(?)
-                LIMIT 1
-            `).get(shipName);
+            // Rechercher le vaisseau dans la base de données étendues d'abord
+            let ship = await uexShipDisplayService.getShipByNameExtended(shipName);
+            
+            // Si pas trouvé dans les données étendues, fallback vers la base normale
+            if (!ship) {
+                ship = await database.getShipByName(shipName);
+            }
 
             if (!ship) {
                 return await interaction.editReply({
@@ -75,12 +70,12 @@ module.exports = {
                 });
             }
 
-            // Créer l'embed enrichi avec image et caractéristiques
-            const embedData = await shipDisplayService.createShipEmbed(ship, {
+            // Créer l'embed enrichi avec TOUTES les données UEX Corp complètes
+            const embedData = await uexShipDisplayService.createShipEmbed(ship, {
                 color: '#0099ff',
                 showSpecs: true,
                 showImage: !noImage,
-                showPrice: true,
+                showPrices: true,
                 compact: compact
             });
 
@@ -107,7 +102,7 @@ module.exports = {
             });
 
             // Mettre à jour les détails en arrière-plan si nécessaire
-            shipDisplayService.updateShipDetails(ship.name).catch(console.error);
+            // Note: Pas de mise à jour nécessaire avec les données UEX Corp locales
 
         } catch (error) {
             console.error('Erreur commande ship:', error);
@@ -138,8 +133,25 @@ module.exports = {
         try {
             await interaction.deferUpdate();
 
+            // Utiliser getInstance mais s'assurer que c'est initialisé
             const db = Database.getInstance();
-            const ship = db.prepare('SELECT * FROM ships WHERE id = ?').get(shipId);
+            await db.ensureInitialized();
+            
+            // Chercher d'abord dans les données étendues, puis fallback
+            let ship = null;
+            try {
+                // Essayer avec l'ID d'abord
+                ship = await db.getShipById(shipId);
+                if (ship) {
+                    // Puis chercher les données étendues pour ce vaisseau
+                    const extendedShip = await uexShipDisplayService.getShipByNameExtended(ship.name);
+                    if (extendedShip) {
+                        ship = extendedShip;
+                    }
+                }
+            } catch (error) {
+                console.log('Erreur lors de la récupération des données étendues:', error);
+            }
 
             if (!ship) {
                 return await interaction.editReply({
@@ -150,15 +162,14 @@ module.exports = {
 
             switch (type) {
                 case 'refresh':
-                    // Forcer la mise à jour des détails
-                    await shipDisplayService.updateShipDetails(ship.name);
+                    // Les données UEX Corp sont déjà à jour localement
                     
-                    // Recréer l'embed avec les nouvelles données
-                    const refreshedEmbedData = await shipDisplayService.createShipEmbed(ship, {
+                    // Recréer l'embed avec les données actuelles
+                    const refreshedEmbedData = await uexShipDisplayService.createShipEmbed(ship, {
                         color: '#00ff00',
                         showSpecs: true,
                         showImage: true,
-                        showPrice: true,
+                        showPrices: true,
                         compact: false
                     });
 

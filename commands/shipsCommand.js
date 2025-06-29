@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
-const shipsLoader = require('../utils/shipsLoader');
+const Database = require('../config/database');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -63,7 +63,7 @@ module.exports = {
                     { name: 'Vehicle', value: 'Vehicle' }
                 )),
 
-    async execute(interaction) {
+    async execute(interaction, database) {
         const searchQuery = interaction.options.getString('search');
         const manufacturerFilter = interaction.options.getString('manufacturer');
         const categoryFilter = interaction.options.getString('category');
@@ -75,23 +75,24 @@ module.exports = {
             let ships;
 
             if (searchQuery) {
-                // Recherche par nom
-                ships = shipsLoader.searchShips(searchQuery);
+                // Recherche par nom dans la base UEX Corp
+                ships = await database.searchShips(searchQuery, 50);
             } else {
-                // Récupérer tous les vaisseaux
-                ships = shipsLoader.loadAllShips();
+                // Récupérer tous les vaisseaux avec limite
+                ships = await database.getAllShips(100);
             }
 
-            // Appliquer les filtres
+            // Appliquer les filtres sur les données UEX Corp
             if (manufacturerFilter) {
                 ships = ships.filter(ship => 
-                    (ship.manufacturer || '').toLowerCase().includes(manufacturerFilter.toLowerCase())
+                    (ship.manufacturer_name || '').toLowerCase().includes(manufacturerFilter.toLowerCase())
                 );
             }
 
             if (categoryFilter) {
                 ships = ships.filter(ship => 
-                    (ship.category || '').toLowerCase().includes(categoryFilter.toLowerCase())
+                    (ship.career || '').toLowerCase().includes(categoryFilter.toLowerCase()) ||
+                    (ship.role || '').toLowerCase().includes(categoryFilter.toLowerCase())
                 );
             }
 
@@ -146,7 +147,7 @@ module.exports = {
             // Grouper les vaisseaux par fabricant pour un meilleur affichage
             const shipsByManufacturer = {};
             displayShips.forEach(ship => {
-                const manufacturer = ship.manufacturer || 'Inconnu';
+                const manufacturer = ship.manufacturer_name || 'Inconnu';
                 if (!shipsByManufacturer[manufacturer]) {
                     shipsByManufacturer[manufacturer] = [];
                 }
@@ -160,9 +161,9 @@ module.exports = {
 
                 const shipList = manufacturerShips.map(ship => {
                     let shipInfo = `• **${ship.name}**`;
-                    if (ship.category) shipInfo += ` (${ship.category})`;
+                    if (ship.career) shipInfo += ` (${ship.career})`;
                     if (ship.size) shipInfo += ` [${ship.size}]`;
-                    if (ship.price && ship.price > 0) shipInfo += ` - $${ship.price}`;
+                    if (ship.price_standalone && ship.price_standalone > 0) shipInfo += ` - $${ship.price_standalone}`;
                     return shipInfo;
                 }).join('\n');
 
@@ -178,20 +179,19 @@ module.exports = {
                 fieldCount++;
             });
 
-            // Ajouter des statistiques
-            const stats = shipsLoader.getStats();
-            let statsText = `**Total:** ${stats.totalShips} vaisseaux\n`;
-            statsText += `**Fabricants:** ${stats.manufacturers}\n`;
-            statsText += `**Catégories:** ${stats.categories}\n`;
-            statsText += `**Tailles:** ${stats.sizes}`;
+            // Ajouter des statistiques UEX Corp
+            const totalShips = ships.length;
+            const uniqueManufacturers = [...new Set(ships.map(s => s.manufacturer_name).filter(Boolean))].length;
+            const uniqueCareers = [...new Set(ships.map(s => s.career).filter(Boolean))].length;
+            const uniqueSizes = [...new Set(ships.map(s => s.size).filter(Boolean))].length;
             
-            if (stats.priceRange.average > 0) {
-                statsText += `\n**Prix:** $${stats.priceRange.min} - $${stats.priceRange.max}`;
-                statsText += `\n**Moyenne:** $${stats.priceRange.average}`;
-            }
+            let statsText = `**Total:** ${totalShips} vaisseaux\n`;
+            statsText += `**Fabricants:** ${uniqueManufacturers}\n`;
+            statsText += `**Carrières:** ${uniqueCareers}\n`;
+            statsText += `**Tailles:** ${uniqueSizes}`;
 
             embed.addFields({
-                name: '📊 Statistiques de la base',
+                name: '📊 Statistiques UEX Corp',
                 value: statsText,
                 inline: true
             });

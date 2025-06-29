@@ -1,0 +1,11 @@
+{
+  "data": {
+    "starHangar": {},
+    "spaceFoundry": {},
+    "rsi": {}
+  },
+  "timestamp": 1751186434765,
+  "ttl": 900000,
+  "namespace": "prices",
+  "identifier": "all_prices"
+}

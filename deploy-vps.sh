@@ -31,8 +31,29 @@ if [ -f ".env.backup" ]; then
 fi
 
 # Installer les dépendances
-echo "📚 Installation des dépendances..."
-npm install --production
+echo "📦 Installation des dépendances..."
+npm install
+
+# Créer le répertoire public s'il n'existe pas
+mkdir -p public/css public/js
+
+# Configurer les permissions
+chmod +x *.sh
+
+# Configurer PM2 si pas déjà fait
+if ! command -v pm2 &> /dev/null; then
+    echo "📦 Installation de PM2..."
+    npm install -g pm2
+fi
+
+# Configurer le firewall pour le port web (si ufw est installé)
+if command -v ufw &> /dev/null; then
+    echo "🔥 Configuration du firewall..."
+    ufw allow 3001/tcp
+fi
+
+echo "🌐 Configuration de l'interface web..."
+echo "Port configuré: ${WEB_PORT:-3001}"
 
 # Redémarrer le service avec PM2
 echo "🔄 Redémarrage du service..."

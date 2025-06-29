@@ -6,11 +6,7 @@ const cron = require('node-cron');
 
 // Importation des modules
 const Database = require('./config/database');
-const RSIScraper = require('./scrapers/rsiScraper');
-const StarHangarScraper = require('./scrapers/starHangarScraper');
-const SpaceFoundryScraper = require('./scrapers/spaceFoundryScraper');
-const upgradePathfinder = require('./services/upgradePathfinder');
-const priceAlertService = require('./services/priceAlertService');
+const UpgradePriceService = require('./services/upgradePriceService');
 
 // Création du client Discord
 const client = new Client({
@@ -24,7 +20,19 @@ client.commands = new Collection();
 
 // Variables globales
 let database;
-const scrapers = [];
+let upgradePriceService;
+
+// Variables pour les statistiques du bot
+let botStats = {
+    status: 'starting',
+    uptime: 0,
+    memory: 0,
+    cpu: 0,
+    lastRestart: new Date(),
+    alertsActive: 0,
+    upgradesCalculated: 0,
+    cacheHitRate: '0%'
+};
 
 // Fonction pour charger les commandes
 function loadCommands() {
@@ -68,32 +76,32 @@ async function deployCommands() {
     }
 }
 
-// Fonction d'initialisation des scrapers
-function initializeScrapers() {
-    scrapers.push(new RSIScraper());
-    scrapers.push(new StarHangarScraper());
-    scrapers.push(new SpaceFoundryScraper());
-    
-    console.log(`✅ ${scrapers.length} scrapers initialisés`);
+// Fonction d'initialisation des services
+function initializeServices() {
+    upgradePriceService = new UpgradePriceService();
+    console.log('✅ Services d\'alertes d\'upgrades initialisés');
 }
 
-// Fonction de scraping automatique
-async function runScrapers() {
-    console.log('🔄 Début du scraping automatique...');
+// Fonction de vérification des données UEX Corp
+async function checkUEXData() {
+    console.log('🔄 Vérification des données UEX Corp...');
     
-    for (const scraper of scrapers) {
-        try {
-            await scraper.scrape(database);
-            console.log(`✅ Scraping terminé pour ${scraper.name}`);
-        } catch (error) {
-            console.error(`❌ Erreur lors du scraping de ${scraper.name}:`, error.message);
+    try {
+        const shipCount = await database.getShipCount();
+        console.log(`📊 Nombre de vaisseaux en base: ${shipCount}`);
+        
+        if (shipCount === 0) {
+            console.log('⚠️ Base de données vide - Veuillez exécuter la migration UEX Corp');
+            console.log('💡 Utilisez: node scripts/migrate-uex-data.js');
+        } else {
+            console.log('✅ Données UEX Corp disponibles');
         }
         
-        // Délai entre les scrapers pour éviter la surcharge
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        return shipCount > 0;
+    } catch (error) {
+        console.error('❌ Erreur lors de la vérification des données:', error.message);
+        return false;
     }
-    
-    console.log('✅ Scraping automatique terminé');
 }
 
 // Événement: Bot prêt
@@ -104,13 +112,26 @@ client.once('ready', async () => {
     await deployCommands();
     
     // Définir le statut du bot
-    client.user.setActivity('Star Citizen Upgrades', { type: 'WATCHING' });
+    client.user.setActivity('Star Citizen Upgrades | UEX Corp Data', { type: 'WATCHING' });
     
-    // Lancer un premier scraping
-    setTimeout(async () => {
-        console.log('🔄 Premier scraping au démarrage...');
-        await runScrapers();
-    }, 5000);
+    // Vérifier les données UEX Corp
+    const hasData = await checkUEXData();
+    
+    if (hasData) {
+        // Démarrer le service d'alertes d'upgrades
+        console.log('🔄 Démarrage du service d\'alertes d\'upgrades...');
+        await upgradePriceService.startAlertService(client, 30); // Vérification toutes les 30 minutes
+    } else {
+        console.log('⚠️ Service d\'alertes non démarré - Données manquantes');
+    }
+    
+    // Initialiser les statistiques du bot
+    updateBotStatistics();
+    
+    // Mettre à jour les statistiques toutes les minutes
+    setInterval(updateBotStatistics, 60000);
+    
+    console.log('🌐 Interface web disponible sur http://localhost:3001/dashboard');
 });
 
 // Événement: Interaction (commandes slash et boutons)
@@ -125,6 +146,32 @@ client.on('interactionCreate', async interaction => {
             await command.autocomplete(interaction, database);
         } catch (error) {
             console.error('Erreur lors de l\'autocomplétion:', error);
+        }
+        return;
+    }
+    
+    // Gestion des menus de sélection
+    if (interaction.isStringSelectMenu()) {
+        try {
+            // Essayer de trouver une commande qui peut gérer ce menu
+            for (const command of client.commands.values()) {
+                if (command.handleSelectMenu && await command.handleSelectMenu(interaction)) {
+                    return; // Menu géré avec succès
+                }
+            }
+            
+            // Si aucune commande n'a géré le menu
+            console.log(`Menu non géré: ${interaction.customId}`);
+            
+        } catch (error) {
+            console.error('Erreur lors de la gestion du menu:', error);
+            
+            if (!interaction.replied && !interaction.deferred) {
+                await interaction.reply({
+                    content: '❌ Erreur lors du traitement de cette sélection.',
+                    ephemeral: true
+                });
+            }
         }
         return;
     }
@@ -167,6 +214,12 @@ client.on('interactionCreate', async interaction => {
 
     try {
         await command.execute(interaction, database);
+        
+        // Incrémenter le compteur d'upgrades pour certaines commandes
+        if (['upgrade', 'compare', 'ship'].includes(interaction.commandName)) {
+            incrementUpgradeCount();
+        }
+        
     } catch (error) {
         console.error('Erreur lors de l\'exécution de la commande:', error);
         
@@ -217,29 +270,23 @@ async function main() {
         console.log('🔄 Chargement des commandes...');
         loadCommands();
         
-        // Initialiser les scrapers
-        console.log('🔄 Initialisation des scrapers...');
-        initializeScrapers();
+        // Initialiser les services
+        console.log('🔄 Initialisation des services...');
+        initializeServices();
         
-        // Programmer le scraping automatique
-        const scrapeInterval = process.env.SCRAPE_INTERVAL_HOURS || 6;
-        console.log(`⏰ Scraping automatique programmé toutes les ${scrapeInterval} heures`);
+        // Programmer les vérifications périodiques des alertes (toutes les heures)
+        console.log('⏰ Programmation des vérifications d\'alertes...');
         
-        cron.schedule(`0 */${scrapeInterval} * * *`, async () => {
-            console.log('⏰ Déclenchement du scraping automatique programmé');
-            await runScrapers();
+        cron.schedule('0 * * * *', async () => {
+            console.log('⏰ Vérification automatique des alertes d\'upgrades');
+            if (upgradePriceService) {
+                await upgradePriceService.checkAlerts(client);
+            }
         });
         
         // Connecter le bot Discord
         console.log('🔄 Connexion à Discord...');
         await client.login(process.env.DISCORD_TOKEN);
-        
-        // Démarrer le service d'alertes de prix
-        console.log('🔄 Démarrage du service d\'alertes de prix...');
-        priceAlertService.startMonitoring(client, upgradePathfinder);
-        
-        // Nettoyer les anciennes alertes au démarrage
-        priceAlertService.cleanupOldAlerts();
         
     } catch (error) {
         console.error('❌ Erreur lors de l\'initialisation:', error);
@@ -247,12 +294,44 @@ async function main() {
     }
 }
 
+// Fonction pour mettre à jour les statistiques du bot
+function updateBotStatistics() {
+    const now = Date.now();
+    const memUsage = process.memoryUsage();
+    
+    botStats = {
+        status: 'online',
+        uptime: Math.floor((now - client.readyTimestamp) / 1000),
+        memory: Math.round(memUsage.heapUsed / 1024 / 1024), // MB
+        cpu: process.cpuUsage(),
+        lastRestart: botStats.lastRestart,
+        alertsActive: botStats.alertsActive,
+        upgradesCalculated: botStats.upgradesCalculated,
+        cacheHitRate: botStats.cacheHitRate
+    };
+}
+
+// Fonction pour incrémenter le compteur d'upgrades
+function incrementUpgradeCount() {
+    botStats.upgradesCalculated++;
+    updateBotStatistics();
+}
+
+// Fonction pour mettre à jour le nombre d'alertes actives
+function updateAlertCount(count) {
+    botStats.alertsActive = count;
+    updateBotStatistics();
+}
+
+// Fonction pour mettre à jour le taux de cache hit
+function updateCacheHitRate(rate) {
+    botStats.cacheHitRate = rate;
+    updateBotStatistics();
+}
+
 // Gestion de l'arrêt propre
 process.on('SIGINT', () => {
     console.log('\n🔄 Arrêt du bot...');
-    
-    // Arrêter le service d'alertes
-    priceAlertService.stopMonitoring();
     
     if (database) {
         database.close();
@@ -264,9 +343,6 @@ process.on('SIGINT', () => {
 
 process.on('SIGTERM', () => {
     console.log('\n🔄 Arrêt du bot (SIGTERM)...');
-    
-    // Arrêter le service d'alertes
-    priceAlertService.stopMonitoring();
     
     if (database) {
         database.close();

@@ -4,18 +4,51 @@ const path = require('path');
 class Database {
     constructor() {
         this.db = null;
+        this.isInitialized = false;
+        this.initPromise = null;
+    }
+
+    static getInstance() {
+        if (!Database._instance) {
+            Database._instance = new Database();
+        }
+        return Database._instance;
+    }
+
+    // Méthode pour s'assurer que l'instance est initialisée
+    async ensureInitialized() {
+        if (this.isInitialized) {
+            return this;
+        }
+        
+        if (!this.initPromise) {
+            this.initPromise = this.init();
+        }
+        
+        await this.initPromise;
+        return this;
     }
 
     async init() {
+        if (this.isInitialized) {
+            return Promise.resolve();
+        }
+
         return new Promise((resolve, reject) => {
             const dbPath = process.env.DATABASE_PATH || './database.sqlite';
             this.db = new sqlite3.Database(dbPath, (err) => {
                 if (err) {
                     console.error('Erreur lors de l\'ouverture de la base de données:', err);
+                    this.isInitialized = false;
                     reject(err);
                 } else {
                     console.log('Base de données SQLite connectée');
-                    this.createTables().then(resolve).catch(reject);
+                    this.createTables()
+                        .then(() => {
+                            this.isInitialized = true;
+                            resolve();
+                        })
+                        .catch(reject);
                 }
             });
         });
@@ -80,7 +113,12 @@ class Database {
     }
 
     async insertShip(name, basePrice = null, manufacturer = null, category = null) {
+        await this.ensureInitialized();
         return new Promise((resolve, reject) => {
+            if (!this.db) {
+                reject(new Error('Base de données non initialisée'));
+                return;
+            }
             const normalizedName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
             const sql = `
                 INSERT OR REPLACE INTO ships (name, normalized_name, base_price, manufacturer, category, updated_at)
@@ -97,10 +135,51 @@ class Database {
     }
 
     async getShipByName(name) {
+        await this.ensureInitialized();
         return new Promise((resolve, reject) => {
+            if (!this.db) {
+                reject(new Error('Base de données non initialisée'));
+                return;
+            }
             const normalizedName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
             const sql = `SELECT * FROM ships WHERE normalized_name = ? OR name LIKE ?`;
             this.db.get(sql, [normalizedName, `%${name}%`], (err, row) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(row);
+                }
+            });
+        });
+    }
+
+    async getShipCount() {
+        await this.ensureInitialized();
+        return new Promise((resolve, reject) => {
+            if (!this.db) {
+                reject(new Error('Base de données non initialisée'));
+                return;
+            }
+            const sql = 'SELECT COUNT(*) as count FROM ships';
+            this.db.get(sql, [], (err, row) => {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(row.count);
+                }
+            });
+        });
+    }
+
+    async getShipById(id) {
+        await this.ensureInitialized();
+        return new Promise((resolve, reject) => {
+            if (!this.db) {
+                reject(new Error('Base de données non initialisée'));
+                return;
+            }
+            const sql = 'SELECT * FROM ships WHERE id = ?';
+            this.db.get(sql, [id], (err, row) => {
                 if (err) {
                     reject(err);
                 } else {
@@ -162,24 +241,21 @@ class Database {
         });
     }
 
-    async searchShips(query) {
+    async searchShips(query, limit = 25) {
+        await this.ensureInitialized();
         return new Promise((resolve, reject) => {
+            if (!this.db) {
+                reject(new Error('Base de données non initialisée'));
+                return;
+            }
             const sql = `
-                SELECT * FROM ships 
-                WHERE name LIKE ? OR normalized_name LIKE ?
-                ORDER BY 
-                    CASE 
-                        WHEN name LIKE ? THEN 1
-                        WHEN name LIKE ? THEN 2
-                        ELSE 3
-                    END,
-                    name
-                LIMIT 10
+                SELECT DISTINCT name 
+                FROM ships 
+                WHERE LOWER(name) LIKE LOWER(?) 
+                ORDER BY name 
+                LIMIT ?
             `;
-            const searchTerm = `%${query.toLowerCase()}%`;
-            const exactStart = `${query.toLowerCase()}%`;
-            
-            this.db.all(sql, [searchTerm, searchTerm, exactStart, searchTerm], (err, rows) => {
+            this.db.all(sql, [`%${query}%`, limit], (err, rows) => {
                 if (err) {
                     reject(err);
                 } else {

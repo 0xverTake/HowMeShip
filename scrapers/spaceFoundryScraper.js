@@ -1,246 +1,229 @@
-const BaseScraper = require('./baseScraper');
+/**
+ * Scraper spécialisé pour Space Foundry
+ * Extrait les prix en temps réel des vaisseaux du marché gris
+ */
+
+const axios = require('axios');
 const cheerio = require('cheerio');
 
-class SpaceFoundryScraper extends BaseScraper {
+class SpaceFoundryScraper {
     constructor() {
-        super('Space-Foundry', process.env.SPACE_FOUNDRY_BASE_URL || 'https://spacefoundry.com');
-        this.shipsUrl = `${this.baseUrl}/ships`;
-        this.upgradesUrl = `${this.baseUrl}/upgrades`;
+        this.baseURL = 'https://space-foundry.com';
+        this.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Cache-Control': 'no-cache'
+        };
+        this.cache = new Map();
+        this.cacheTimeout = 15 * 60 * 1000; // 15 minutes (plus fréquent pour le marché gris)
     }
 
-    async scrapeShips() {
-        const ships = [];
-        
+    /**
+     * Scraper les prix des vaisseaux depuis Space Foundry
+     */
+    async scrapeShipPrices() {
         try {
-            const html = await this.fetchPage(this.shipsUrl);
-            const $ = cheerio.load(html);
+            console.log('[SpaceFoundry] 🔄 Scraping des prix du marché gris...');
             
-            // Sélecteurs pour les vaisseaux Space Foundry
-            $('.product, .ship-item, .item').each((index, element) => {
-                const $element = $(element);
-                
-                const name = $element.find('.product-name, .ship-name, .title, h3, h4').first().text().trim();
-                const priceText = $element.find('.price, .cost, .amount').first().text().trim();
-                const availability = $element.find('.stock, .availability, .in-stock, .out-of-stock').first().text().trim();
-                
-                if (name) {
-                    const price = this.parsePrice(priceText);
-                    
-                    ships.push({
-                        name: name,
-                        price: price,
-                        manufacturer: null,
-                        category: 'Ship',
-                        availability: availability
-                    });
+            const ships = new Map();
+            const collections = [
+                'collections/all',
+                'collections/standalone-ccud-ship',
+                'collections/standalone-original-concept-ship',
+                'collections/type-upgrade'
+            ];
+
+            for (const collection of collections) {
+                try {
+                    await this.scrapeCollectionPrices(collection, ships);
+                } catch (error) {
+                    console.log(`[SpaceFoundry] ⚠️ Erreur collection ${collection}:`, error.message);
                 }
-            });
+            }
+
+            console.log(`[SpaceFoundry] ✅ ${ships.size} vaisseaux scrapés`);
+            return ships;
             
-            // Essayer d'autres sélecteurs
-            if (ships.length === 0) {
-                $('[data-product], .listing, .card').each((index, element) => {
-                    const $element = $(element);
-                    const name = $element.find('h1, h2, h3, h4, .name, .title').first().text().trim();
+        } catch (error) {
+            console.error('[SpaceFoundry] ❌ Erreur scraping:', error.message);
+            return new Map();
+        }
+    }
+
+    /**
+     * Scraper une collection spécifique
+     */
+    async scrapeCollectionPrices(collection, ships) {
+        const url = `${this.baseURL}/${collection}`;
+        
+        const response = await axios.get(url, {
+            headers: this.headers,
+            timeout: 15000
+        });
+
+        const $ = cheerio.load(response.data);
+
+        // Analyser les produits dans la grille Space Foundry
+        $('.grid-product, .product-item, .product-card').each((index, element) => {
+            try {
+                const $item = $(element);
+                
+                // Extraire le nom du vaisseau
+                const nameElement = $item.find('.product-title, .grid-product__title, h3, .title').first();
+                let shipName = nameElement.text().trim();
+                
+                if (!shipName) return;
+
+                // Nettoyer le nom
+                shipName = this.cleanShipName(shipName);
+
+                // Extraire le prix (chercher dans plusieurs sélecteurs)
+                const priceElement = $item.find('.money, .price, .grid-product__price, .product-price').first();
+                let price = priceElement.text().trim();
+                
+                if (price) {
+                    price = this.parsePrice(price);
                     
-                    if (name && (name.toLowerCase().includes('ship') || 
-                                name.toLowerCase().includes('vessel') || 
-                                name.toLowerCase().includes('fighter') ||
-                                name.toLowerCase().includes('cargo'))) {
-                        const priceText = $element.find('*').filter(function() {
-                            return $(this).text().match(/[\$€£][\d,]+/);
-                        }).first().text().trim();
+                    if (price > 0) {
+                        // Extraire des informations supplémentaires
+                        const link = $item.find('a').first().attr('href');
+                        const image = $item.find('img').first().attr('src') || $item.find('img').first().attr('data-src');
+                        const vendor = $item.find('.vendor, .seller, .grid-product__vendor').text().trim();
                         
-                        const price = this.parsePrice(priceText);
-                        
-                        ships.push({
-                            name: name,
+                        ships.set(shipName.toLowerCase(), {
+                            name: shipName,
                             price: price,
-                            manufacturer: null,
-                            category: 'Ship'
+                            currency: 'USD',
+                            source: 'Space Foundry',
+                            vendor: vendor || 'Unknown',
+                            url: link ? (link.startsWith('http') ? link : this.baseURL + link) : null,
+                            image: image ? (image.startsWith('http') ? image : this.baseURL + image) : null,
+                            collection: collection,
+                            scrapedAt: new Date().toISOString()
                         });
                     }
-                });
-            }
-            
-        } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des vaisseaux:`, error.message);
-        }
-        
-        return ships;
-    }
-
-    async scrapeUpgrades() {
-        const upgrades = [];
-        
-        try {
-            const html = await this.fetchPage(this.upgradesUrl);
-            const $ = cheerio.load(html);
-            
-            // Sélecteurs pour les upgrades
-            $('.upgrade, .ccu, .product').each((index, element) => {
-                const $element = $(element);
-                
-                const title = $element.find('.title, .product-title, .name, h3, h4').first().text().trim();
-                const description = $element.find('.description, .details').first().text().trim();
-                const priceText = $element.find('.price, .cost, .amount').first().text().trim();
-                const url = $element.find('a').first().attr('href');
-                const availability = $element.find('.stock, .availability').first().text().trim();
-                
-                // Analyser le titre et la description pour extraire les informations d'upgrade
-                const fullText = `${title} ${description}`.toLowerCase();
-                
-                if (fullText.includes('upgrade') || fullText.includes('ccu') || fullText.includes('cross chassis')) {
-                    // Patterns pour extraire les noms des vaisseaux
-                    const patterns = [
-                        /(.+?)\s*(?:to|->|→)\s*(.+?)\s*(?:upgrade|ccu)/i,
-                        /upgrade\s*(?:from\s*)?(.+?)\s*(?:to|->|→)\s*(.+)/i,
-                        /ccu\s*(.+?)\s*(?:to|->|→)\s*(.+)/i,
-                        /(.+?)\s*(?:to|->|→)\s*(.+?)\s*cross\s*chassis/i
-                    ];
-                    
-                    for (const pattern of patterns) {
-                        const match = (title + ' ' + description).match(pattern);
-                        if (match) {
-                            const fromShip = match[1].trim().replace(/^(from|upgrade|ccu)\s*/i, '');
-                            const toShip = match[2].trim().replace(/\s*(upgrade|ccu)$/i, '');
-                            
-                            if (fromShip && toShip && fromShip !== toShip) {
-                                const price = this.parsePrice(priceText);
-                                
-                                upgrades.push({
-                                    fromShip: fromShip,
-                                    toShip: toShip,
-                                    price: price || 0,
-                                    currency: 'USD',
-                                    availability: availability || 'Available',
-                                    url: url ? (url.startsWith('http') ? url : `${this.baseUrl}${url}`) : null
-                                });
-                                break;
-                            }
-                        }
-                    }
                 }
-            });
-            
-            // Si aucun upgrade n'a été trouvé, essayer une approche plus générale
-            if (upgrades.length === 0) {
-                $('*').filter(function() {
-                    const text = $(this).text().toLowerCase();
-                    return (text.includes('upgrade') || text.includes('ccu')) && 
-                           (text.includes('to') || text.includes('->') || text.includes('→'));
-                }).each((index, element) => {
-                    const $element = $(element);
-                    const text = $element.text().trim();
-                    
-                    // Essayer d'extraire les informations d'upgrade du texte
-                    const upgradePatterns = [
-                        /(.+?)\s*(?:to|->|→)\s*(.+?)\s*(?:upgrade|ccu|cross)/i,
-                        /upgrade\s*(.+?)\s*(?:to|->|→)\s*(.+)/i
-                    ];
-                    
-                    for (const pattern of upgradePatterns) {
-                        const match = text.match(pattern);
-                        if (match) {
-                            const fromShip = match[1].trim();
-                            const toShip = match[2].trim();
-                            
-                            // Vérifier que ce sont des noms de vaisseaux valides
-                            if (fromShip.length > 2 && toShip.length > 2 && 
-                                fromShip !== toShip && 
-                                !fromShip.includes('$') && !toShip.includes('$')) {
-                                
-                                // Chercher le prix dans l'élément parent
-                                const priceElement = $element.closest('*').find('*').filter(function() {
-                                    return $(this).text().match(/[\$€£][\d,]+/);
-                                }).first();
-                                
-                                const price = this.parsePrice(priceElement.text());
-                                
-                                upgrades.push({
-                                    fromShip: fromShip,
-                                    toShip: toShip,
-                                    price: price || 0,
-                                    currency: 'USD',
-                                    availability: 'Available',
-                                    url: null
-                                });
-                                break;
-                            }
-                        }
-                    }
-                });
+            } catch (error) {
+                // Continue avec le prochain élément
             }
-            
-        } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des upgrades:`, error.message);
-        }
-        
-        return upgrades;
+        });
     }
 
-    async scrapeCategories() {
-        const categories = [];
-        
+    /**
+     * Rechercher un vaisseau spécifique
+     */
+    async searchShip(shipName) {
         try {
-            const html = await this.fetchPage(this.baseUrl);
-            const $ = cheerio.load(html);
+            const searchUrl = `${this.baseURL}/search?q=${encodeURIComponent(shipName)}`;
             
-            // Chercher les catégories de produits
-            $('.category, .nav-item, .menu-item').each((index, element) => {
-                const $element = $(element);
-                const categoryName = $element.find('a, span').first().text().trim();
-                const categoryUrl = $element.find('a').first().attr('href');
-                
-                if (categoryName && categoryUrl && 
-                    (categoryName.toLowerCase().includes('ship') || 
-                     categoryName.toLowerCase().includes('upgrade') ||
-                     categoryName.toLowerCase().includes('ccu'))) {
-                    
-                    categories.push({
-                        name: categoryName,
-                        url: categoryUrl.startsWith('http') ? categoryUrl : `${this.baseUrl}${categoryUrl}`
-                    });
-                }
+            const response = await axios.get(searchUrl, {
+                headers: this.headers,
+                timeout: 10000
             });
-            
-        } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des catégories:`, error.message);
-        }
-        
-        return categories;
-    }
 
-    async scrapeByCategory(categoryUrl) {
-        const items = [];
-        
-        try {
-            const html = await this.fetchPage(categoryUrl);
-            const $ = cheerio.load(html);
-            
-            $('.product, .item, .listing').each((index, element) => {
-                const $element = $(element);
+            const $ = cheerio.load(response.data);
+            const results = [];
+
+            $('.grid-product, .product-item').each((index, element) => {
+                const $item = $(element);
+                const name = $item.find('.product-title, .grid-product__title').text().trim();
+                const priceText = $item.find('.money, .price').text().trim();
+                const price = this.parsePrice(priceText);
+                const vendor = $item.find('.vendor, .grid-product__vendor').text().trim();
                 
-                const name = $element.find('.name, .title, h3, h4').first().text().trim();
-                const priceText = $element.find('.price, .cost').first().text().trim();
-                const url = $element.find('a').first().attr('href');
-                
-                if (name) {
-                    const price = this.parsePrice(priceText);
-                    
-                    items.push({
-                        name: name,
+                if (name && price > 0) {
+                    results.push({
+                        name: this.cleanShipName(name),
                         price: price,
-                        url: url ? (url.startsWith('http') ? url : `${this.baseUrl}${url}`) : null,
-                        category: categoryUrl
+                        currency: 'USD',
+                        source: 'Space Foundry',
+                        vendor: vendor || 'Unknown'
                     });
                 }
             });
+
+            return results;
             
         } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping de la catégorie ${categoryUrl}:`, error.message);
+            console.error('[SpaceFoundry] Erreur recherche:', error.message);
+            return [];
         }
+    }
+
+    /**
+     * Obtenir les données de produit via l'API Shopify
+     */
+    async getProductData() {
+        try {
+            const url = `${this.baseURL}/products.json`;
+            
+            const response = await axios.get(url, {
+                headers: this.headers,
+                timeout: 10000
+            });
+
+            if (response.data && response.data.products) {
+                return response.data.products.map(product => ({
+                    name: this.cleanShipName(product.title),
+                    price: product.variants && product.variants[0] ? product.variants[0].price / 100 : 0,
+                    currency: 'USD',
+                    source: 'Space Foundry',
+                    vendor: product.vendor || 'Unknown',
+                    url: `${this.baseURL}/products/${product.handle}`,
+                    image: product.images && product.images[0] ? product.images[0].src : null,
+                    scrapedAt: new Date().toISOString()
+                }));
+            }
+
+            return [];
+            
+        } catch (error) {
+            console.log('[SpaceFoundry] API Shopify non accessible, utilisation du scraping HTML');
+            return [];
+        }
+    }
+
+    /**
+     * Nettoyer le nom d'un vaisseau
+     */
+    cleanShipName(name) {
+        return name
+            .replace(/\s*-\s*LTI\s*/gi, '')
+            .replace(/\s*\(.*?\)\s*/g, '')
+            .replace(/\s*CCU\s*/gi, '')
+            .replace(/\s*Upgrade\s*/gi, '')
+            .replace(/\s*Package\s*/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    /**
+     * Parser un prix depuis le texte
+     */
+    parsePrice(priceText) {
+        if (!priceText) return 0;
         
-        return items;
+        // Supprimer le symbole $ et autres caractères
+        const numericPrice = priceText.replace(/[\$,\s]/g, '').replace(/[^\d.]/g, '');
+        const price = parseFloat(numericPrice);
+        
+        return isNaN(price) ? 0 : price;
+    }
+
+    /**
+     * Vérifier si le site est accessible
+     */
+    async testConnection() {
+        try {
+            const response = await axios.get(this.baseURL, {
+                headers: this.headers,
+                timeout: 5000
+            });
+            return response.status === 200;
+        } catch (error) {
+            return false;
+        }
     }
 }
 

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowMeShip - Mission Control</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/css/dashboard-style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Arrière-plan étoilé discret -->
+    <div class="stars-background"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-rocket"></i>
+                <span>HowMeShip Mission Control</span>
+            </div>
+            <div class="header-stats">
+                <div class="stat">
+                    <i class="fas fa-circle status-indicator" id="botStatus"></i>
+                    <span id="botStatusText">Connecting...</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span id="uptime">--:--:--</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sidebar">
+        <ul class="nav-menu">
+            <li class="nav-item active" data-section="overview">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Aperçu</span>
+            </li>
+            <li class="nav-item" data-section="bot-control">
+                <i class="fas fa-robot"></i>
+                <span>Contrôle Bot</span>
+            </li>
+            <li class="nav-item" data-section="logs">
+                <i class="fas fa-file-alt"></i>
+                <span>Logs en Direct</span>
+            </li>
+            <li class="nav-item" data-section="database">
+                <i class="fas fa-database"></i>
+                <span>Base de Données</span>
+            </li>
+            <li class="nav-item" data-section="alerts">
+                <i class="fas fa-bell"></i>
+                <span>Alertes</span>
+            </li>
+            <li class="nav-item" data-section="performance">
+                <i class="fas fa-chart-line"></i>
+                <span>Performance</span>
+            </li>
+            <li class="nav-item" data-section="settings">
+                <i class="fas fa-cog"></i>
+                <span>Paramètres</span>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <!-- Section Aperçu -->
+        <section id="overview" class="content-section active">
+            <h2>Aperçu du Système</h2>
+            
+            <div class="dashboard-grid">
+                <!-- Statistiques principales -->
+                <div class="card stats-card">
+                    <h3><i class="fas fa-chart-bar"></i> Statistiques</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value" id="totalShips">--</div>
+                            <div class="stat-label">Vaisseaux</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="totalCommands">--</div>
+                            <div class="stat-label">Commandes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="activeAlerts">--</div>
+                            <div class="stat-label">Alertes</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="memoryUsage">--</div>
+                            <div class="stat-label">RAM (MB)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statut des services -->
+                <div class="card services-card">
+                    <h3><i class="fas fa-server"></i> Services</h3>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <span class="service-name">Discord Bot</span>
+                            <span class="service-status" id="discordStatus">
+                                <i class="fas fa-circle"></i> Checking...
+                            </span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Base de Données</span>
+                            <span class="service-status" id="databaseStatus">
+                                <i class="fas fa-circle"></i> Checking...
+                            </span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">UEX Service</span>
+                            <span class="service-status" id="uexStatus">
+                                <i class="fas fa-circle"></i> Checking...
+                            </span>
+                        </div>
+                        <div class="service-item">
+                            <span class="service-name">Interface Web</span>
+                            <span class="service-status online">
+                                <i class="fas fa-circle"></i> Online
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activité récente -->
+                <div class="card activity-card">
+                    <h3><i class="fas fa-history"></i> Activité Récente</h3>
+                    <div class="activity-list" id="recentActivity">
+                        <div class="activity-item">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Système initialisé</span>
+                            <time>Il y a quelques instants</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contrôle Bot -->
+        <section id="bot-control" class="content-section">
+            <h2>Contrôle du Bot</h2>
+            
+            <div class="dashboard-grid">
+                <div class="card control-card">
+                    <h3><i class="fas fa-power-off"></i> Actions</h3>
+                    <div class="control-buttons">
+                        <button class="btn btn-success" onclick="restartBot()">
+                            <i class="fas fa-redo"></i> Redémarrer Bot
+                        </button>
+                        <button class="btn btn-warning" onclick="refreshData()">
+                            <i class="fas fa-sync"></i> Actualiser Données
+                        </button>
+                        <button class="btn btn-info" onclick="deployCommands()">
+                            <i class="fas fa-upload"></i> Déployer Commandes
+                        </button>
+                        <button class="btn btn-danger" onclick="emergencyStop()">
+                            <i class="fas fa-stop"></i> Arrêt d'Urgence
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card status-card">
+                    <h3><i class="fas fa-info"></i> Statut Détaillé</h3>
+                    <div class="status-details">
+                        <div class="status-row">
+                            <label>Version:</label>
+                            <span id="botVersion">1.0.0</span>
+                        </div>
+                        <div class="status-row">
+                            <label>Guildes:</label>
+                            <span id="guildCount">--</span>
+                        </div>
+                        <div class="status-row">
+                            <label>Utilisateurs:</label>
+                            <span id="userCount">--</span>
+                        </div>
+                        <div class="status-row">
+                            <label>Commandes/h:</label>
+                            <span id="commandsPerHour">--</span>
+                        </div>
+                        <div class="status-row">
+                            <label>Dernière activité:</label>
+                            <span id="lastActivity">--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Logs -->
+        <section id="logs" class="content-section">
+            <h2>Logs en Direct</h2>
+            
+            <div class="card logs-card">
+                <div class="logs-header">
+                    <h3><i class="fas fa-terminal"></i> Console</h3>
+                    <div class="logs-controls">
+                        <button class="btn btn-sm" onclick="clearLogs()">
+                            <i class="fas fa-trash"></i> Vider
+                        </button>
+                        <button class="btn btn-sm" onclick="saveLogs()">
+                            <i class="fas fa-download"></i> Sauvegarder
+                        </button>
+                        <label class="auto-scroll">
+                            <input type="checkbox" id="autoScroll" checked>
+                            Auto-scroll
+                        </label>
+                    </div>
+                </div>
+                <div class="logs-container" id="logsContainer">
+                    <div class="log-entry info">
+                        <span class="timestamp">[${new Date().toLocaleTimeString()}]</span>
+                        <span class="level">INFO</span>
+                        <span class="message">Interface web démarrée</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Base de Données -->
+        <section id="database" class="content-section">
+            <h2>Base de Données</h2>
+            
+            <div class="dashboard-grid">
+                <div class="card db-stats-card">
+                    <h3><i class="fas fa-database"></i> Statistiques BD</h3>
+                    <div class="db-stats">
+                        <div class="db-stat">
+                            <label>Vaisseaux étendus:</label>
+                            <span id="extendedShipsCount">--</span>
+                        </div>
+                        <div class="db-stat">
+                            <label>Alertes actives:</label>
+                            <span id="activeAlertsCount">--</span>
+                        </div>
+                        <div class="db-stat">
+                            <label>Taille BD:</label>
+                            <span id="dbSize">--</span>
+                        </div>
+                        <div class="db-stat">
+                            <label>Dernière MAJ:</label>
+                            <span id="lastDbUpdate">--</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card db-actions-card">
+                    <h3><i class="fas fa-tools"></i> Actions BD</h3>
+                    <div class="db-actions">
+                        <button class="btn btn-primary" onclick="backupDatabase()">
+                            <i class="fas fa-save"></i> Sauvegarder BD
+                        </button>
+                        <button class="btn btn-warning" onclick="optimizeDatabase()">
+                            <i class="fas fa-compress"></i> Optimiser
+                        </button>
+                        <button class="btn btn-info" onclick="updateShipsData()">
+                            <i class="fas fa-sync-alt"></i> MAJ Vaisseaux
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autres sections... -->
+        <section id="alerts" class="content-section">
+            <h2>Système d'Alertes</h2>
+            <div class="card">
+                <p>Configuration des alertes de prix et de disponibilité...</p>
+            </div>
+        </section>
+
+        <section id="performance" class="content-section">
+            <h2>Monitoring Performance</h2>
+            <div class="card">
+                <canvas id="performanceChart" width="400" height="200"></canvas>
+            </div>
+        </section>
+
+        <section id="settings" class="content-section">
+            <h2>Paramètres</h2>
+            <div class="card">
+                <p>Configuration du système...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/dashboard-app.js"></script>
+</body>
+</html>

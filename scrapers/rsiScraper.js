@@ -1,137 +1,235 @@
-const BaseScraper = require('./baseScraper');
-const cheerio = require('cheerio');
-const fs = require('fs');
-const path = require('path');
+/**
+ * Scraper pour RSI (Roberts Space Industries)
+ * Extrait les prix officiels des vaisseaux
+ */
 
-class RSIScraper extends BaseScraper {
+const axios = require('axios');
+const cheerio = require('cheerio');
+
+class RSIScraper {
     constructor() {
-        super('RSI', process.env.RSI_BASE_URL || 'https://robertsspaceindustries.com');
-        this.pledgeStoreUrl = `${this.baseUrl}/pledge/ships`;
-        this.upgradesUrl = `${this.baseUrl}/pledge/ship-upgrades`;
+        this.baseURL = 'https://robertsspaceindustries.com';
+        this.apiURL = 'https://robertsspaceindustries.com/api';
+        this.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Referer': 'https://robertsspaceindustries.com/pledge/ships'
+        };
+        this.cache = new Map();
+        this.cacheTimeout = 60 * 60 * 1000; // 1 heure (prix officiels changent moins souvent)
     }
 
-    async scrapeShips() {
+    /**
+     * Scraper les prix officiels des vaisseaux depuis RSI
+     */
+    async scrapeShipPrices() {
+        try {
+            console.log('[RSI] 🔄 Scraping des prix officiels...');
+            
+            const ships = new Map();
+            
+            // Essayer d'abord l'API RSI
+            const apiShips = await this.getShipsFromAPI();
+            if (apiShips.length > 0) {
+                apiShips.forEach(ship => {
+                    ships.set(ship.name.toLowerCase(), ship);
+                });
+            } else {
+                // Fallback sur le scraping HTML
+                await this.scrapeShipStore(ships);
+            }
+
+            console.log(`[RSI] ✅ ${ships.size} vaisseaux officiels scrapés`);
+            return ships;
+            
+        } catch (error) {
+            console.error('[RSI] ❌ Erreur scraping:', error.message);
+            return new Map();
+        }
+    }
+
+    /**
+     * Obtenir les vaisseaux via l'API RSI
+     */
+    async getShipsFromAPI() {
+        try {
+            // Endpoints API RSI connus
+            const endpoints = [
+                '/store/pledge/ships',
+                '/store/getShips',
+                '/pledge/ships/list'
+            ];
+
+            for (const endpoint of endpoints) {
+                try {
+                    const response = await axios.get(`${this.apiURL}${endpoint}`, {
+                        headers: this.headers,
+                        timeout: 10000
+                    });
+
+                    if (response.data && response.data.data) {
+                        return this.parseAPIShips(response.data.data);
+                    }
+                } catch (error) {
+                    // Essayer le prochain endpoint
+                }
+            }
+
+            return [];
+            
+        } catch (error) {
+            console.log('[RSI] API non accessible, utilisation du scraping HTML');
+            return [];
+        }
+    }
+
+    /**
+     * Parser les données de l'API RSI
+     */
+    parseAPIShips(data) {
         const ships = [];
         
-        try {
-            // Scraper la page des vaisseaux du pledge store
-            const html = await this.fetchPage(this.pledgeStoreUrl);
-            const $ = cheerio.load(html);
-            
-            // Sélecteurs pour les vaisseaux (à adapter selon la structure réelle du site)
-            $('.ship-item, .pledge-item').each((index, element) => {
-                const $element = $(element);
-                
-                const name = $element.find('.ship-name, .title, h3, h4').first().text().trim();
-                const priceText = $element.find('.price, .cost, .amount').first().text().trim();
-                const manufacturer = $element.find('.manufacturer, .brand').first().text().trim();
-                
-                if (name) {
-                    const price = this.parsePrice(priceText);
-                    
+        if (Array.isArray(data)) {
+            data.forEach(ship => {
+                if (ship.name && ship.price) {
                     ships.push({
-                        name: name,
-                        price: price,
-                        manufacturer: manufacturer || null,
-                        category: 'Ship'
+                        name: ship.name.trim(),
+                        price: parseFloat(ship.price) || 0,
+                        currency: 'USD',
+                        source: 'RSI Official',
+                        url: ship.url ? `${this.baseURL}${ship.url}` : null,
+                        image: ship.image ? `${this.baseURL}${ship.image}` : null,
+                        manufacturer: ship.manufacturer || 'Unknown',
+                        scrapedAt: new Date().toISOString()
                     });
                 }
             });
-            
-            // Si la structure est différente, essayer d'autres sélecteurs
-            if (ships.length === 0) {
-                $('[data-ship], [data-pledge]').each((index, element) => {
-                    const $element = $(element);
-                    const name = $element.attr('data-ship') || $element.attr('data-pledge') || 
-                                 $element.find('h1, h2, h3, h4, h5').first().text().trim();
-                    
-                    if (name) {
-                        const priceText = $element.find('*').filter(function() {
-                            return $(this).text().match(/\$[\d,]+/);
-                        }).first().text().trim();
-                        
-                        const price = this.parsePrice(priceText);
-                        
-                        ships.push({
-                            name: name,
-                            price: price,
-                            manufacturer: null,
-                            category: 'Ship'
-                        });
-                    }
-                });
-            }
-            
-        } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des vaisseaux:`, error.message);
         }
-        
-        // Ajouter des vaisseaux de base connus si le scraping n'a pas fonctionné
-        if (ships.length === 0) {
-            ships.push(...this.getKnownShips());
-        }
-        
+
         return ships;
     }
 
-    async scrapeUpgrades() {
-        const upgrades = [];
+    /**
+     * Scraper le store officiel RSI
+     */
+    async scrapeShipStore(ships) {
+        const storeUrl = `${this.baseURL}/pledge/ships`;
         
-        try {
-            const html = await this.fetchPage(this.upgradesUrl);
-            const $ = cheerio.load(html);
-            
-            // Sélecteurs pour les upgrades
-            $('.upgrade-item, .ccu-item').each((index, element) => {
-                const $element = $(element);
+        const response = await axios.get(storeUrl, {
+            headers: this.headers,
+            timeout: 15000
+        });
+
+        const $ = cheerio.load(response.data);
+
+        // Analyser les vaisseaux dans le store officiel
+        $('.ship-item, .pledge-item, .product-item').each((index, element) => {
+            try {
+                const $item = $(element);
                 
-                const fromShip = $element.find('.from-ship, .source').first().text().trim();
-                const toShip = $element.find('.to-ship, .target').first().text().trim();
-                const priceText = $element.find('.price, .cost').first().text().trim();
-                const url = $element.find('a').first().attr('href');
+                // Extraire le nom du vaisseau
+                const nameElement = $item.find('.ship-name, .pledge-name, .title, h3').first();
+                let shipName = nameElement.text().trim();
                 
-                if (fromShip && toShip) {
-                    const price = this.parsePrice(priceText);
+                if (!shipName) return;
+
+                // Extraire le prix
+                const priceElement = $item.find('.price, .pledge-price, .amount').first();
+                let price = priceElement.text().trim();
+                
+                if (price) {
+                    price = this.parsePrice(price);
                     
-                    upgrades.push({
-                        fromShip: fromShip,
-                        toShip: toShip,
-                        price: price || 0,
+                    if (price > 0) {
+                        // Extraire des informations supplémentaires
+                        const link = $item.find('a').first().attr('href');
+                        const image = $item.find('img').first().attr('src');
+                        const manufacturer = $item.find('.manufacturer, .brand').text().trim();
+                        
+                        ships.set(shipName.toLowerCase(), {
+                            name: shipName,
+                            price: price,
+                            currency: 'USD',
+                            source: 'RSI Official',
+                            manufacturer: manufacturer || 'Unknown',
+                            url: link ? (link.startsWith('http') ? link : this.baseURL + link) : null,
+                            image: image ? (image.startsWith('http') ? image : this.baseURL + image) : null,
+                            scrapedAt: new Date().toISOString()
+                        });
+                    }
+                }
+            } catch (error) {
+                // Continue avec le prochain élément
+            }
+        });
+    }
+
+    /**
+     * Rechercher un vaisseau spécifique
+     */
+    async searchShip(shipName) {
+        try {
+            const searchUrl = `${this.baseURL}/pledge/ships?search=${encodeURIComponent(shipName)}`;
+            
+            const response = await axios.get(searchUrl, {
+                headers: this.headers,
+                timeout: 10000
+            });
+
+            const $ = cheerio.load(response.data);
+            const results = [];
+
+            $('.ship-item, .pledge-item').each((index, element) => {
+                const $item = $(element);
+                const name = $item.find('.ship-name, .pledge-name').text().trim();
+                const priceText = $item.find('.price, .pledge-price').text().trim();
+                const price = this.parsePrice(priceText);
+                
+                if (name && price > 0) {
+                    results.push({
+                        name: name,
+                        price: price,
                         currency: 'USD',
-                        availability: 'Available',
-                        url: url ? `${this.baseUrl}${url}` : null
+                        source: 'RSI Official'
                     });
                 }
             });
+
+            return results;
             
         } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des upgrades:`, error.message);
+            console.error('[RSI] Erreur recherche:', error.message);
+            return [];
         }
-        
-        return upgrades;
     }
 
-    getKnownShips() {
-        try {
-            // Charger la base de données complète des vaisseaux
-            const shipsDataPath = path.join(__dirname, '..', 'data', 'ships.json');
-            
-            if (fs.existsSync(shipsDataPath)) {
-                const shipsData = JSON.parse(fs.readFileSync(shipsDataPath, 'utf8'));
-                return shipsData.ships || [];
-            }
-        } catch (error) {
-            console.error(`[${this.name}] Erreur lors du chargement des vaisseaux:`, error.message);
-        }
+    /**
+     * Parser un prix depuis le texte
+     */
+    parsePrice(priceText) {
+        if (!priceText) return 0;
         
-        // Fallback avec quelques vaisseaux de base si le fichier JSON n'est pas disponible
-        return [
-            { name: 'Aurora MR', price: 25, manufacturer: 'RSI', category: 'Starter' },
-            { name: 'Aurora ES', price: 20, manufacturer: 'RSI', category: 'Starter' },
-            { name: 'Mustang Alpha', price: 30, manufacturer: 'Consolidated Outland', category: 'Starter' },
-            { name: 'Avenger Titan', price: 70, manufacturer: 'Aegis Dynamics', category: 'Fighter' },
-            { name: 'Cutlass Black', price: 100, manufacturer: 'Drake Interplanetary', category: 'Fighter' }
-        ];
+        // Supprimer le symbole $ et autres caractères
+        const numericPrice = priceText.replace(/[\$,\s]/g, '').replace(/[^\d.]/g, '');
+        const price = parseFloat(numericPrice);
+        
+        return isNaN(price) ? 0 : price;
+    }
+
+    /**
+     * Vérifier si le site est accessible
+     */
+    async testConnection() {
+        try {
+            const response = await axios.get(this.baseURL, {
+                headers: this.headers,
+                timeout: 5000
+            });
+            return response.status === 200;
+        } catch (error) {
+            return false;
+        }
     }
 }
 

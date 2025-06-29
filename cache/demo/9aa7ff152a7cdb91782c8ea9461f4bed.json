@@ -1,0 +1,10 @@
+{
+  "data": {
+    "price": 600,
+    "source": "test"
+  },
+  "timestamp": 1751186756917,
+  "ttl": 3600000,
+  "namespace": "ships",
+  "identifier": "carrack"
+}

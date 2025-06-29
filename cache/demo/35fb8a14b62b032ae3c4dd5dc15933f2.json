@@ -1,0 +1,9 @@
+{
+  "data": {
+    "value": "temporaire"
+  },
+  "timestamp": 1751186756920,
+  "ttl": 100,
+  "namespace": "prices",
+  "identifier": "temp"
+}

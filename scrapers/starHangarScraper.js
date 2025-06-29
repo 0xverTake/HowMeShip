@@ -1,198 +1,193 @@
-const BaseScraper = require('./baseScraper');
+/**
+ * Scraper spécialisé pour Star Hangar
+ * Extrait les prix en temps réel des vaisseaux
+ */
+
+const axios = require('axios');
 const cheerio = require('cheerio');
 
-class StarHangarScraper extends BaseScraper {
+class StarHangarScraper {
     constructor() {
-        super('Star-Hangar', process.env.STAR_HANGAR_BASE_URL || 'https://star-hangar.com');
-        this.shipsUrl = `${this.baseUrl}/ships`;
-        this.upgradesUrl = `${this.baseUrl}/upgrades`;
+        this.baseURL = 'https://star-hangar.com';
+        this.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Accept-Language': 'en-US,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate',
+            'Connection': 'keep-alive',
+            'Upgrade-Insecure-Requests': '1'
+        };
+        this.cache = new Map();
+        this.cacheTimeout = 30 * 60 * 1000; // 30 minutes
     }
 
-    async scrapeShips() {
-        const ships = [];
-        
+    /**
+     * Scraper les prix des vaisseaux depuis Star Hangar
+     */
+    async scrapeShipPrices() {
         try {
-            const html = await this.fetchPage(this.shipsUrl);
-            const $ = cheerio.load(html);
+            console.log('[StarHangar] 🔄 Scraping des prix...');
             
-            // Sélecteurs pour les vaisseaux Star-Hangar
-            $('.product-item, .ship-card, .item-card').each((index, element) => {
-                const $element = $(element);
+            const ships = new Map();
+            const categories = [
+                'star-citizen/spaceships.html',
+                'star-citizen/ships.html',
+                'marketplace',
+                'catalog'
+            ];
+
+            for (const category of categories) {
+                try {
+                    await this.scrapeCategoryPrices(category, ships);
+                } catch (error) {
+                    console.log(`[StarHangar] ⚠️ Erreur catégorie ${category}:`, error.message);
+                }
+            }
+
+            console.log(`[StarHangar] ✅ ${ships.size} vaisseaux scrapés`);
+            return ships;
+            
+        } catch (error) {
+            console.error('[StarHangar] ❌ Erreur scraping:', error.message);
+            return new Map();
+        }
+    }
+
+    /**
+     * Scraper une catégorie spécifique
+     */
+    async scrapeCategoryPrices(category, ships) {
+        const url = `${this.baseURL}/${category}`;
+        
+        const response = await axios.get(url, {
+            headers: this.headers,
+            timeout: 15000
+        });
+
+        const $ = cheerio.load(response.data);
+
+        // Analyser la structure HTML pour extraire les vaisseaux
+        $('.product-item, .item-product, .product-wrapper, .product, .item, .listing').each((index, element) => {
+            try {
+                const $item = $(element);
                 
-                const name = $element.find('.product-title, .ship-name, .title, h3, h4').first().text().trim();
-                const priceText = $element.find('.price, .cost, .amount, .product-price').first().text().trim();
-                const availability = $element.find('.stock, .availability, .status').first().text().trim();
+                // Extraire le nom du vaisseau (plusieurs sélecteurs)
+                const nameElement = $item.find('.product-name, .item-name, h2, h3, .title, .product-title, .name').first();
+                let shipName = nameElement.text().trim();
                 
-                if (name) {
-                    const price = this.parsePrice(priceText);
+                if (!shipName) return;
+
+                // Nettoyer le nom
+                shipName = this.cleanShipName(shipName);
+
+                // Extraire le prix (plusieurs sélecteurs)
+                const priceElement = $item.find('.price, .regular-price, .final-price, .amount, .product-price, .cost').first();
+                let price = priceElement.text().trim();
+                
+                if (price) {
+                    price = this.parsePrice(price);
                     
-                    ships.push({
-                        name: name,
+                    if (price > 0) {
+                        // Extraire des informations supplémentaires
+                        const link = $item.find('a').first().attr('href');
+                        const image = $item.find('img').first().attr('src');
+                        
+                        ships.set(shipName.toLowerCase(), {
+                            name: shipName,
+                            price: price,
+                            currency: 'USD',
+                            source: 'Star Hangar',
+                            url: link ? (link.startsWith('http') ? link : this.baseURL + link) : null,
+                            image: image ? (image.startsWith('http') ? image : this.baseURL + image) : null,
+                            category: category,
+                            scrapedAt: new Date().toISOString()
+                        });
+                    }
+                }
+            } catch (error) {
+                // Continue avec le prochain élément
+            }
+        });
+    }
+
+    /**
+     * Rechercher un vaisseau spécifique
+     */
+    async searchShip(shipName) {
+        try {
+            const searchUrl = `${this.baseURL}/catalogsearch/result/?q=${encodeURIComponent(shipName)}`;
+            
+            const response = await axios.get(searchUrl, {
+                headers: this.headers,
+                timeout: 10000
+            });
+
+            const $ = cheerio.load(response.data);
+            const results = [];
+
+            $('.product-item, .item-product').each((index, element) => {
+                const $item = $(element);
+                const name = $item.find('.product-name, .item-name').text().trim();
+                const priceText = $item.find('.price, .regular-price').text().trim();
+                const price = this.parsePrice(priceText);
+                
+                if (name && price > 0) {
+                    results.push({
+                        name: this.cleanShipName(name),
                         price: price,
-                        manufacturer: null,
-                        category: 'Ship',
-                        availability: availability
+                        currency: 'USD',
+                        source: 'Star Hangar'
                     });
                 }
             });
-            
-            // Essayer d'autres sélecteurs si nécessaire
-            if (ships.length === 0) {
-                $('article, .product, .listing').each((index, element) => {
-                    const $element = $(element);
-                    const name = $element.find('h1, h2, h3, h4, .name, .title').first().text().trim();
-                    
-                    if (name && name.toLowerCase().includes('ship') || name.toLowerCase().includes('vessel')) {
-                        const priceText = $element.find('*').filter(function() {
-                            return $(this).text().match(/[\$€£][\d,]+/);
-                        }).first().text().trim();
-                        
-                        const price = this.parsePrice(priceText);
-                        
-                        ships.push({
-                            name: name,
-                            price: price,
-                            manufacturer: null,
-                            category: 'Ship'
-                        });
-                    }
-                });
-            }
+
+            return results;
             
         } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des vaisseaux:`, error.message);
+            console.error('[StarHangar] Erreur recherche:', error.message);
+            return [];
         }
-        
-        return ships;
     }
 
-    async scrapeUpgrades() {
-        const upgrades = [];
-        
-        try {
-            const html = await this.fetchPage(this.upgradesUrl);
-            const $ = cheerio.load(html);
-            
-            // Sélecteurs pour les upgrades
-            $('.upgrade-item, .ccu-item, .product-item').each((index, element) => {
-                const $element = $(element);
-                
-                const title = $element.find('.title, .product-title, h3, h4').first().text().trim();
-                const priceText = $element.find('.price, .cost, .amount').first().text().trim();
-                const url = $element.find('a').first().attr('href');
-                const availability = $element.find('.stock, .availability').first().text().trim();
-                
-                // Essayer d'extraire les noms des vaisseaux du titre
-                if (title && (title.toLowerCase().includes('upgrade') || title.toLowerCase().includes('ccu'))) {
-                    const upgradeMatch = title.match(/(.+?)\s*(?:to|->|→)\s*(.+?)(?:\s*upgrade|\s*ccu|$)/i);
-                    
-                    if (upgradeMatch) {
-                        const fromShip = upgradeMatch[1].trim();
-                        const toShip = upgradeMatch[2].trim();
-                        const price = this.parsePrice(priceText);
-                        
-                        upgrades.push({
-                            fromShip: fromShip,
-                            toShip: toShip,
-                            price: price || 0,
-                            currency: 'USD',
-                            availability: availability || 'Available',
-                            url: url ? (url.startsWith('http') ? url : `${this.baseUrl}${url}`) : null
-                        });
-                    }
-                }
-            });
-            
-            // Essayer une approche différente si aucun upgrade n'a été trouvé
-            if (upgrades.length === 0) {
-                $('*').filter(function() {
-                    const text = $(this).text().toLowerCase();
-                    return text.includes('upgrade') || text.includes('ccu') || text.includes('cross chassis');
-                }).each((index, element) => {
-                    const $element = $(element);
-                    const text = $element.text().trim();
-                    
-                    // Rechercher des patterns d'upgrade dans le texte
-                    const patterns = [
-                        /(.+?)\s*(?:to|->|→)\s*(.+?)\s*upgrade/i,
-                        /(.+?)\s*(?:to|->|→)\s*(.+?)\s*ccu/i,
-                        /upgrade\s*(.+?)\s*(?:to|->|→)\s*(.+)/i
-                    ];
-                    
-                    for (const pattern of patterns) {
-                        const match = text.match(pattern);
-                        if (match) {
-                            const fromShip = match[1].trim();
-                            const toShip = match[2].trim();
-                            
-                            const priceElement = $element.closest('*').find('*').filter(function() {
-                                return $(this).text().match(/[\$€£][\d,]+/);
-                            }).first();
-                            
-                            const price = this.parsePrice(priceElement.text());
-                            
-                            upgrades.push({
-                                fromShip: fromShip,
-                                toShip: toShip,
-                                price: price || 0,
-                                currency: 'USD',
-                                availability: 'Available',
-                                url: null
-                            });
-                            break;
-                        }
-                    }
-                });
-            }
-            
-        } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping des upgrades:`, error.message);
-        }
-        
-        return upgrades;
+    /**
+     * Nettoyer le nom d'un vaisseau
+     */
+    cleanShipName(name) {
+        return name
+            .replace(/\s*-\s*LTI\s*/gi, '')
+            .replace(/\s*\(.*?\)\s*/g, '')
+            .replace(/\s*CCU\s*/gi, '')
+            .replace(/\s*Upgrade\s*/gi, '')
+            .replace(/\s+/g, ' ')
+            .trim();
     }
 
-    async scrapeAllPages() {
-        const allShips = [];
-        const allUpgrades = [];
+    /**
+     * Parser un prix depuis le texte
+     */
+    parsePrice(priceText) {
+        if (!priceText) return 0;
         
+        // Supprimer tout sauf les chiffres et le point décimal
+        const numericPrice = priceText.replace(/[^\d.]/g, '');
+        const price = parseFloat(numericPrice);
+        
+        return isNaN(price) ? 0 : price;
+    }
+
+    /**
+     * Vérifier si le site est accessible
+     */
+    async testConnection() {
         try {
-            // Essayer de trouver la pagination
-            const mainPageHtml = await this.fetchPage(this.shipsUrl);
-            const $ = cheerio.load(mainPageHtml);
-            
-            const pageLinks = [];
-            $('.pagination a, .page-numbers a, .next, .prev').each((index, element) => {
-                const href = $(element).attr('href');
-                if (href && !pageLinks.includes(href)) {
-                    pageLinks.push(href.startsWith('http') ? href : `${this.baseUrl}${href}`);
-                }
+            const response = await axios.get(this.baseURL, {
+                headers: this.headers,
+                timeout: 5000
             });
-            
-            // Scraper la page principale
-            const mainShips = await this.scrapeShips();
-            allShips.push(...mainShips);
-            
-            // Scraper les autres pages si elles existent
-            for (const pageUrl of pageLinks.slice(0, 5)) { // Limiter à 5 pages pour éviter les timeouts
-                try {
-                    await this.delay(2000); // Délai entre les requêtes
-                    const pageHtml = await this.fetchPage(pageUrl);
-                    const page$ = cheerio.load(pageHtml);
-                    
-                    // Utiliser la même logique de scraping sur chaque page
-                    // ... (logique similaire à scrapeShips mais avec page$)
-                    
-                } catch (error) {
-                    console.error(`[${this.name}] Erreur lors du scraping de la page ${pageUrl}:`, error.message);
-                }
-            }
-            
+            return response.status === 200;
         } catch (error) {
-            console.error(`[${this.name}] Erreur lors du scraping multi-pages:`, error.message);
+            return false;
         }
-        
-        return { ships: allShips, upgrades: allUpgrades };
     }
 }
 

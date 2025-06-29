@@ -1,0 +1,656 @@
+[
+  {
+    "name": "Endeavor Landing Bay Pod",
+    "fullName": "MISC Endeavor Landing Bay Pod",
+    "manufacturer": "Musashi Industrial and Starflight Concern",
+    "slug": "endeavor-landing-bay-pod",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Carrier",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:34:11.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Endeavor General Research Pod",
+    "fullName": "MISC Endeavor General Research Pod",
+    "manufacturer": "Musashi Industrial and Starflight Concern",
+    "slug": "endeavor-general-research-pod",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Research",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:34:38.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Endeavor Medical Bay Pod",
+    "fullName": "MISC Endeavor Medical Bay Pod",
+    "manufacturer": "Musashi Industrial and Starflight Concern",
+    "slug": "endeavor-medical-bay-pod",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Medical",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:35:03.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Endeavor Telescope Array Bay Pod",
+    "fullName": "MISC Endeavor Telescope Array Bay Pod",
+    "manufacturer": "Musashi Industrial and Starflight Concern",
+    "slug": "endeavor-telescope-array-bay-pod",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Scanning",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:36:02.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Endeavor Fuel Bay Pod",
+    "fullName": "MISC Endeavor Fuel Bay Pod",
+    "manufacturer": "Musashi Industrial and Starflight Concern",
+    "slug": "endeavor-fuel-bay-pod",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Refueling",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:36:20.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Galaxy Cargo Module",
+    "fullName": "RSI Galaxy Cargo Module",
+    "manufacturer": "Roberts Space Industries",
+    "slug": "galaxy-cargo-module",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Cargo",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:38:45.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Galaxy Medical Module",
+    "fullName": "RSI Galaxy Medical Module",
+    "manufacturer": "Roberts Space Industries",
+    "slug": "galaxy-medical-module",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Medical",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:39:18.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Galaxy Refinery Module",
+    "fullName": "RSI Galaxy Refinery Module",
+    "manufacturer": "Roberts Space Industries",
+    "slug": "galaxy-refinery-module",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Refinery",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T19:39:45.000Z",
+    "dateModified": "2024-03-18T18:07:29.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Cargo Module - Stern",
+    "fullName": "Aegis Retaliator Cargo Module - Stern",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-cargo-module---stern",
+    "uuid": "",
+    "gameVersion": "3.24.3",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 36,
+      "containerSizes": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Cargo",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": true,
+      "url": "https://robertsspaceindustries.com/en/pledge/Add-Ons/Retaliator-Cargo-Module-Stern",
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T20:05:35.000Z",
+    "dateModified": "2025-04-16T15:03:18.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Cargo Module - Bow",
+    "fullName": "Aegis Retaliator Cargo Module - Bow",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-cargo-module---bow",
+    "uuid": "",
+    "gameVersion": "3.24.3",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 38,
+      "containerSizes": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        24
+      ]
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Cargo",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": true,
+      "url": "https://robertsspaceindustries.com/en/pledge/Add-Ons/Retaliator-Cargo-Module-Bow",
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T20:06:09.000Z",
+    "dateModified": "2025-04-16T15:03:17.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Living Front Module",
+    "fullName": "Aegis Retaliator Living Front Module",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-living-front-module",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Passenger",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T20:07:15.000Z",
+    "dateModified": "1970-01-01T00:00:00.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Living Rear Module",
+    "fullName": "Aegis Retaliator Living Rear Module",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-living-rear-module",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Passenger",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T20:07:39.000Z",
+    "dateModified": "2023-12-29T20:09:16.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Torpedo Module – Bow",
+    "fullName": "Aegis Retaliator Torpedo Module – Bow",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-torpedo-module-bow",
+    "uuid": "",
+    "gameVersion": "3.24.3",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Military",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": true,
+      "url": "https://robertsspaceindustries.com/en/pledge/Add-Ons/Retaliator-Torpedo-Module-Bow",
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T20:08:34.000Z",
+    "dateModified": "2025-04-16T15:03:18.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Dropship Front Module",
+    "fullName": "Aegis Retaliator Dropship Front Module",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-dropship-front-module",
+    "uuid": null,
+    "gameVersion": "3.23",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Passenger",
+      "Concept",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": false,
+      "url": null,
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2023-12-29T20:09:59.000Z",
+    "dateModified": "1970-01-01T00:00:00.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  },
+  {
+    "name": "Retaliator Torpedo Module – Stern",
+    "fullName": "Aegis Retaliator Torpedo Module – Stern",
+    "manufacturer": "Aegis Dynamics",
+    "slug": "retaliator-torpedo-module-stern",
+    "uuid": "",
+    "gameVersion": "4.1",
+    "dimensions": {
+      "length": 0,
+      "width": 0,
+      "height": 0
+    },
+    "mass": 0,
+    "crew": {
+      "min": 1,
+      "max": 1
+    },
+    "cargo": {
+      "scu": 0,
+      "containerSizes": []
+    },
+    "fuel": {
+      "quantum": 0,
+      "hydrogen": 0
+    },
+    "categories": [
+      "Military",
+      "Module/Addon"
+    ],
+    "landingPad": "Unknown",
+    "store": {
+      "available": true,
+      "url": "https://robertsspaceindustries.com/en/pledge/Add-Ons/Retaliator-Torpedo-Module-Stern",
+      "brochureUrl": null,
+      "videoUrl": null,
+      "images": []
+    },
+    "dateAdded": "2025-04-16T15:03:18.000Z",
+    "dateModified": "1970-01-01T00:00:00.000Z",
+    "source": "UEX Corp API",
+    "sourceUrl": "https://uexcorp.space/"
+  }
+]

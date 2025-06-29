@@ -1,6 +1,8 @@
 const { SlashCommandBuilder } = require('discord.js');
-const shipDisplayService = require('../services/shipDisplayService');
+const UexShipDisplayService = require('../services/uexShipDisplayService');
 const Database = require('../config/database');
+
+const uexShipDisplayService = new UexShipDisplayService();
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -19,7 +21,7 @@ module.exports = {
                 .setAutocomplete(true)
         ),
 
-    async autocomplete(interaction) {
+    async autocomplete(interaction, database) {
         try {
             const focusedOption = interaction.options.getFocused(true);
             const focusedValue = focusedOption.value.toLowerCase();
@@ -28,14 +30,7 @@ module.exports = {
                 return await interaction.respond([]);
             }
 
-            const db = Database.getInstance();
-            const ships = db.prepare(`
-                SELECT DISTINCT name 
-                FROM ships 
-                WHERE LOWER(name) LIKE ? 
-                ORDER BY name 
-                LIMIT 25
-            `).all(`%${focusedValue}%`);
+            const ships = await database.searchShips(focusedValue, 25);
 
             const choices = ships.map(ship => ({
                 name: ship.name,
@@ -49,7 +44,7 @@ module.exports = {
         }
     },
 
-    async execute(interaction) {
+    async execute(interaction, database) {
         const ship1Name = interaction.options.getString('ship1');
         const ship2Name = interaction.options.getString('ship2');
 
@@ -64,20 +59,17 @@ module.exports = {
                 });
             }
 
-            // Rechercher les vaisseaux dans la base de données
-            const db = Database.getInstance();
+            // Rechercher les vaisseaux dans la base de données étendues d'abord
+            let ship1 = await uexShipDisplayService.getShipByNameExtended(ship1Name);
+            let ship2 = await uexShipDisplayService.getShipByNameExtended(ship2Name);
             
-            const ship1 = db.prepare(`
-                SELECT * FROM ships 
-                WHERE LOWER(name) = LOWER(?)
-                LIMIT 1
-            `).get(ship1Name);
-
-            const ship2 = db.prepare(`
-                SELECT * FROM ships 
-                WHERE LOWER(name) = LOWER(?)
-                LIMIT 1
-            `).get(ship2Name);
+            // Si pas trouvé dans les données étendues, fallback vers la base normale
+            if (!ship1) {
+                ship1 = await database.getShipByName(ship1Name);
+            }
+            if (!ship2) {
+                ship2 = await database.getShipByName(ship2Name);
+            }
 
             if (!ship1) {
                 return await interaction.editReply({
@@ -94,15 +86,12 @@ module.exports = {
             }
 
             // Créer l'embed de comparaison
-            const comparisonData = await shipDisplayService.createComparisonEmbed(ship1, ship2);
+            const comparisonData = await uexShipDisplayService.createComparisonEmbed(ship1, ship2);
 
             await interaction.editReply(comparisonData);
 
-            // Mettre à jour les détails en arrière-plan
-            Promise.all([
-                shipDisplayService.updateShipDetails(ship1.name),
-                shipDisplayService.updateShipDetails(ship2.name)
-            ]).catch(console.error);
+            // Note: Les données UEX Corp sont déjà à jour localement
+            // Pas besoin de mise à jour en arrière-plan
 
         } catch (error) {
             console.error('Erreur commande compare:', error);
