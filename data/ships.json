@@ -1,0 +1,1054 @@
+{
+  "ships": [
+    {
+      "name": "100i",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Starter",
+      "price": 45,
+      "size": "Small"
+    },
+    {
+      "name": "125a",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Fighter",
+      "price": 65,
+      "size": "Small"
+    },
+    {
+      "name": "135c",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Cargo",
+      "price": 85,
+      "size": "Small"
+    },
+    {
+      "name": "300i",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Touring",
+      "price": 55,
+      "size": "Small"
+    },
+    {
+      "name": "315p",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Exploration",
+      "price": 65,
+      "size": "Small"
+    },
+    {
+      "name": "325a",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Fighter",
+      "price": 70,
+      "size": "Small"
+    },
+    {
+      "name": "350r",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Racing",
+      "price": 125,
+      "size": "Small"
+    },
+    {
+      "name": "400i",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Multi-role",
+      "price": 250,
+      "size": "Medium"
+    },
+    {
+      "name": "600i Explorer",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Exploration",
+      "price": 475,
+      "size": "Large"
+    },
+    {
+      "name": "600i Touring",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Touring",
+      "price": 435,
+      "size": "Large"
+    },
+    {
+      "name": "890 Jump",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Luxury",
+      "price": 950,
+      "size": "Capital"
+    },
+    {
+      "name": "A2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "category": "Bomber",
+      "price": 700,
+      "size": "Large"
+    },
+    {
+      "name": "Ares Inferno",
+      "manufacturer": "Crusader Industries",
+      "category": "Fighter",
+      "price": 250,
+      "size": "Medium"
+    },
+    {
+      "name": "Ares Ion",
+      "manufacturer": "Crusader Industries",
+      "category": "Fighter",
+      "price": 250,
+      "size": "Medium"
+    },
+    {
+      "name": "Aurora CL",
+      "manufacturer": "RSI",
+      "category": "Cargo",
+      "price": 45,
+      "size": "Small"
+    },
+    {
+      "name": "Aurora ES",
+      "manufacturer": "RSI",
+      "category": "Starter",
+      "price": 20,
+      "size": "Small"
+    },
+    {
+      "name": "Aurora LN",
+      "manufacturer": "RSI",
+      "category": "Fighter",
+      "price": 35,
+      "size": "Small"
+    },
+    {
+      "name": "Aurora LX",
+      "manufacturer": "RSI",
+      "category": "Touring",
+      "price": 30,
+      "size": "Small"
+    },
+    {
+      "name": "Aurora MR",
+      "manufacturer": "RSI",
+      "category": "Starter",
+      "price": 25,
+      "size": "Small"
+    },
+    {
+      "name": "Avenger Stalker",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 60,
+      "size": "Small"
+    },
+    {
+      "name": "Avenger Titan",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 70,
+      "size": "Small"
+    },
+    {
+      "name": "Avenger Titan Renegade",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 75,
+      "size": "Small"
+    },
+    {
+      "name": "Avenger Warlock",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 85,
+      "size": "Small"
+    },
+    {
+      "name": "Ballista",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Ground Vehicle",
+      "price": 140,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Blade",
+      "manufacturer": "Esperia",
+      "category": "Fighter",
+      "price": 250,
+      "size": "Medium"
+    },
+    {
+      "name": "Buccaneer",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Fighter",
+      "price": 110,
+      "size": "Small"
+    },
+    {
+      "name": "C2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "category": "Cargo",
+      "price": 400,
+      "size": "Large"
+    },
+    {
+      "name": "C8 Pisces",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Snub Fighter",
+      "price": 45,
+      "size": "Snub"
+    },
+    {
+      "name": "C8X Pisces Expedition",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Snub Fighter",
+      "price": 60,
+      "size": "Snub"
+    },
+    {
+      "name": "Carrack",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Exploration",
+      "price": 600,
+      "size": "Large"
+    },
+    {
+      "name": "Carrack Expedition",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Exploration",
+      "price": 635,
+      "size": "Large"
+    },
+    {
+      "name": "Caterpillar",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Cargo",
+      "price": 295,
+      "size": "Large"
+    },
+    {
+      "name": "Caterpillar Best In Show Edition",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Cargo",
+      "price": 324,
+      "size": "Large"
+    },
+    {
+      "name": "Caterpillar Pirate Edition",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Cargo",
+      "price": 324,
+      "size": "Large"
+    },
+    {
+      "name": "Constellation Andromeda",
+      "manufacturer": "RSI",
+      "category": "Multi-role",
+      "price": 240,
+      "size": "Large"
+    },
+    {
+      "name": "Constellation Aquila",
+      "manufacturer": "RSI",
+      "category": "Exploration",
+      "price": 310,
+      "size": "Large"
+    },
+    {
+      "name": "Constellation Phoenix",
+      "manufacturer": "RSI",
+      "category": "Luxury",
+      "price": 350,
+      "size": "Large"
+    },
+    {
+      "name": "Constellation Taurus",
+      "manufacturer": "RSI",
+      "category": "Cargo",
+      "price": 200,
+      "size": "Large"
+    },
+    {
+      "name": "Corsair",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Exploration",
+      "price": 250,
+      "size": "Large"
+    },
+    {
+      "name": "Crucible",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Support",
+      "price": 350,
+      "size": "Large"
+    },
+    {
+      "name": "Cutlass Black",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Fighter",
+      "price": 100,
+      "size": "Medium"
+    },
+    {
+      "name": "Cutlass Black Best In Show Edition",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Fighter",
+      "price": 110,
+      "size": "Medium"
+    },
+    {
+      "name": "Cutlass Blue",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Fighter",
+      "price": 175,
+      "size": "Medium"
+    },
+    {
+      "name": "Cutlass Red",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Support",
+      "price": 135,
+      "size": "Medium"
+    },
+    {
+      "name": "Cyclone",
+      "manufacturer": "Tumbril Land Systems",
+      "category": "Ground Vehicle",
+      "price": 55,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Cyclone AA",
+      "manufacturer": "Tumbril Land Systems",
+      "category": "Ground Vehicle",
+      "price": 70,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Cyclone RC",
+      "manufacturer": "Tumbril Land Systems",
+      "category": "Ground Vehicle",
+      "price": 65,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Cyclone RN",
+      "manufacturer": "Tumbril Land Systems",
+      "category": "Ground Vehicle",
+      "price": 65,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Cyclone TR",
+      "manufacturer": "Tumbril Land Systems",
+      "category": "Ground Vehicle",
+      "price": 60,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Defender",
+      "manufacturer": "Banu",
+      "category": "Fighter",
+      "price": 220,
+      "size": "Medium"
+    },
+    {
+      "name": "Dragonfly Black",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Ground Vehicle",
+      "price": 40,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Dragonfly Yellowjacket",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Ground Vehicle",
+      "price": 40,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Eclipse",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Stealth Bomber",
+      "price": 300,
+      "size": "Medium"
+    },
+    {
+      "name": "Endeavor",
+      "manufacturer": "MISC",
+      "category": "Research",
+      "price": 350,
+      "size": "Capital"
+    },
+    {
+      "name": "F7A Hornet",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 175,
+      "size": "Medium"
+    },
+    {
+      "name": "F7C Hornet",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 110,
+      "size": "Medium"
+    },
+    {
+      "name": "F7C-M Super Hornet",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 180,
+      "size": "Medium"
+    },
+    {
+      "name": "F7C-M Super Hornet Heartseeker",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 195,
+      "size": "Medium"
+    },
+    {
+      "name": "F7C-R Hornet Tracker",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 140,
+      "size": "Medium"
+    },
+    {
+      "name": "F7C-S Hornet Ghost",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Stealth Fighter",
+      "price": 125,
+      "size": "Medium"
+    },
+    {
+      "name": "Freelancer",
+      "manufacturer": "MISC",
+      "category": "Multi-role",
+      "price": 110,
+      "size": "Medium"
+    },
+    {
+      "name": "Freelancer DUR",
+      "manufacturer": "MISC",
+      "category": "Exploration",
+      "price": 135,
+      "size": "Medium"
+    },
+    {
+      "name": "Freelancer MAX",
+      "manufacturer": "MISC",
+      "category": "Cargo",
+      "price": 150,
+      "size": "Medium"
+    },
+    {
+      "name": "Freelancer MIS",
+      "manufacturer": "MISC",
+      "category": "Fighter",
+      "price": 175,
+      "size": "Medium"
+    },
+    {
+      "name": "Genesis Starliner",
+      "manufacturer": "Crusader Industries",
+      "category": "Transport",
+      "price": 400,
+      "size": "Large"
+    },
+    {
+      "name": "Gladiator",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Bomber",
+      "price": 165,
+      "size": "Medium"
+    },
+    {
+      "name": "Gladius",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 90,
+      "size": "Small"
+    },
+    {
+      "name": "Gladius Valiant",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 110,
+      "size": "Small"
+    },
+    {
+      "name": "Glaive",
+      "manufacturer": "Esperia",
+      "category": "Fighter",
+      "price": 350,
+      "size": "Medium"
+    },
+    {
+      "name": "Hammerhead",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Corvette",
+      "price": 725,
+      "size": "Large"
+    },
+    {
+      "name": "Hammerhead Best In Show Edition",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Corvette",
+      "price": 797,
+      "size": "Large"
+    },
+    {
+      "name": "Harbinger",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Bomber",
+      "price": 290,
+      "size": "Medium"
+    },
+    {
+      "name": "Hawk",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 100,
+      "size": "Small"
+    },
+    {
+      "name": "Herald",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Data Runner",
+      "price": 85,
+      "size": "Small"
+    },
+    {
+      "name": "Hull A",
+      "manufacturer": "MISC",
+      "category": "Cargo",
+      "price": 60,
+      "size": "Small"
+    },
+    {
+      "name": "Hull B",
+      "manufacturer": "MISC",
+      "category": "Cargo",
+      "price": 90,
+      "size": "Medium"
+    },
+    {
+      "name": "Hull C",
+      "manufacturer": "MISC",
+      "category": "Cargo",
+      "price": 250,
+      "size": "Large"
+    },
+    {
+      "name": "Hull D",
+      "manufacturer": "MISC",
+      "category": "Cargo",
+      "price": 550,
+      "size": "Capital"
+    },
+    {
+      "name": "Hull E",
+      "manufacturer": "MISC",
+      "category": "Cargo",
+      "price": 890,
+      "size": "Capital"
+    },
+    {
+      "name": "Hurricane",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Fighter",
+      "price": 195,
+      "size": "Medium"
+    },
+    {
+      "name": "Idris-M",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Frigate",
+      "price": 1500,
+      "size": "Capital"
+    },
+    {
+      "name": "Idris-P",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Frigate",
+      "price": 1250,
+      "size": "Capital"
+    },
+    {
+      "name": "Javelin",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Destroyer",
+      "price": 3000,
+      "size": "Capital"
+    },
+    {
+      "name": "Khartu-al",
+      "manufacturer": "Aopoa",
+      "category": "Scout",
+      "price": 170,
+      "size": "Medium"
+    },
+    {
+      "name": "Kraken",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Carrier",
+      "price": 1650,
+      "size": "Capital"
+    },
+    {
+      "name": "Kraken Privateer",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Carrier",
+      "price": 1750,
+      "size": "Capital"
+    },
+    {
+      "name": "Liberator",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Transport",
+      "price": 575,
+      "size": "Large"
+    },
+    {
+      "name": "M2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "category": "Transport",
+      "price": 520,
+      "size": "Large"
+    },
+    {
+      "name": "M50 Interceptor",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Racing",
+      "price": 100,
+      "size": "Small"
+    },
+    {
+      "name": "Mantis",
+      "manufacturer": "RSI",
+      "category": "Interdiction",
+      "price": 150,
+      "size": "Small"
+    },
+    {
+      "name": "Merchantman",
+      "manufacturer": "Banu",
+      "category": "Cargo",
+      "price": 650,
+      "size": "Large"
+    },
+    {
+      "name": "Mercury Star Runner",
+      "manufacturer": "Crusader Industries",
+      "category": "Data Runner",
+      "price": 260,
+      "size": "Medium"
+    },
+    {
+      "name": "Mole",
+      "manufacturer": "Argo Astronautics",
+      "category": "Mining",
+      "price": 315,
+      "size": "Large"
+    },
+    {
+      "name": "Mustang Alpha",
+      "manufacturer": "Consolidated Outland",
+      "category": "Starter",
+      "price": 30,
+      "size": "Small"
+    },
+    {
+      "name": "Mustang Beta",
+      "manufacturer": "Consolidated Outland",
+      "category": "Touring",
+      "price": 40,
+      "size": "Small"
+    },
+    {
+      "name": "Mustang Delta",
+      "manufacturer": "Consolidated Outland",
+      "category": "Fighter",
+      "price": 65,
+      "size": "Small"
+    },
+    {
+      "name": "Mustang Gamma",
+      "manufacturer": "Consolidated Outland",
+      "category": "Racing",
+      "price": 55,
+      "size": "Small"
+    },
+    {
+      "name": "Mustang Omega",
+      "manufacturer": "Consolidated Outland",
+      "category": "Racing",
+      "price": 0,
+      "size": "Small"
+    },
+    {
+      "name": "Nautilus",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Mine Layer",
+      "price": 725,
+      "size": "Large"
+    },
+    {
+      "name": "Nomad",
+      "manufacturer": "Consolidated Outland",
+      "category": "Cargo",
+      "price": 80,
+      "size": "Small"
+    },
+    {
+      "name": "Nova Tank",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Ground Vehicle",
+      "price": 105,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Nox",
+      "manufacturer": "Aopoa",
+      "category": "Ground Vehicle",
+      "price": 40,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Nox Kue",
+      "manufacturer": "Aopoa",
+      "category": "Ground Vehicle",
+      "price": 45,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Odyssey",
+      "manufacturer": "MISC",
+      "category": "Exploration",
+      "price": 700,
+      "size": "Large"
+    },
+    {
+      "name": "Orion",
+      "manufacturer": "RSI",
+      "category": "Mining",
+      "price": 575,
+      "size": "Large"
+    },
+    {
+      "name": "P-52 Merlin",
+      "manufacturer": "Kruger Intergalactic",
+      "category": "Snub Fighter",
+      "price": 25,
+      "size": "Snub"
+    },
+    {
+      "name": "P-72 Archimedes",
+      "manufacturer": "Kruger Intergalactic",
+      "category": "Snub Fighter",
+      "price": 35,
+      "size": "Snub"
+    },
+    {
+      "name": "Polaris",
+      "manufacturer": "RSI",
+      "category": "Corvette",
+      "price": 750,
+      "size": "Capital"
+    },
+    {
+      "name": "Prospector",
+      "manufacturer": "MISC",
+      "category": "Mining",
+      "price": 155,
+      "size": "Small"
+    },
+    {
+      "name": "Prowler",
+      "manufacturer": "Esperia",
+      "category": "Dropship",
+      "price": 440,
+      "size": "Medium"
+    },
+    {
+      "name": "Razor",
+      "manufacturer": "MISC",
+      "category": "Racing",
+      "price": 135,
+      "size": "Small"
+    },
+    {
+      "name": "Razor EX",
+      "manufacturer": "MISC",
+      "category": "Racing",
+      "price": 140,
+      "size": "Small"
+    },
+    {
+      "name": "Razor LX",
+      "manufacturer": "MISC",
+      "category": "Racing",
+      "price": 145,
+      "size": "Small"
+    },
+    {
+      "name": "Reclaimer",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Salvage",
+      "price": 400,
+      "size": "Large"
+    },
+    {
+      "name": "Redeemer",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Gunship",
+      "price": 325,
+      "size": "Medium"
+    },
+    {
+      "name": "Reliant Kore",
+      "manufacturer": "MISC",
+      "category": "Starter",
+      "price": 65,
+      "size": "Small"
+    },
+    {
+      "name": "Reliant Mako",
+      "manufacturer": "MISC",
+      "category": "News Van",
+      "price": 95,
+      "size": "Small"
+    },
+    {
+      "name": "Reliant Sen",
+      "manufacturer": "MISC",
+      "category": "Research",
+      "price": 90,
+      "size": "Small"
+    },
+    {
+      "name": "Reliant Tana",
+      "manufacturer": "MISC",
+      "category": "Fighter",
+      "price": 85,
+      "size": "Small"
+    },
+    {
+      "name": "Retaliator Base",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Bomber",
+      "price": 150,
+      "size": "Medium"
+    },
+    {
+      "name": "Retaliator Bomber",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Bomber",
+      "price": 275,
+      "size": "Medium"
+    },
+    {
+      "name": "ROC",
+      "manufacturer": "Greycat Industrial",
+      "category": "Ground Vehicle",
+      "price": 60,
+      "size": "Vehicle"
+    },
+    {
+      "name": "ROC-DS",
+      "manufacturer": "Greycat Industrial",
+      "category": "Ground Vehicle",
+      "price": 75,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Rover",
+      "manufacturer": "RSI",
+      "category": "Ground Vehicle",
+      "price": 50,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Sabre",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Stealth Fighter",
+      "price": 170,
+      "size": "Medium"
+    },
+    {
+      "name": "Sabre Comet",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Stealth Fighter",
+      "price": 185,
+      "size": "Medium"
+    },
+    {
+      "name": "Sabre Raven",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Stealth Fighter",
+      "price": 0,
+      "size": "Medium"
+    },
+    {
+      "name": "San'tok.yāi",
+      "manufacturer": "Aopoa",
+      "category": "Fighter",
+      "price": 220,
+      "size": "Medium"
+    },
+    {
+      "name": "Scorpius",
+      "manufacturer": "RSI",
+      "category": "Fighter",
+      "price": 240,
+      "size": "Medium"
+    },
+    {
+      "name": "Sentinel",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 275,
+      "size": "Medium"
+    },
+    {
+      "name": "Spartan",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Ground Vehicle",
+      "price": 65,
+      "size": "Vehicle"
+    },
+    {
+      "name": "Spirit A1",
+      "manufacturer": "Crusader Industries",
+      "category": "Stealth Bomber",
+      "price": 150,
+      "size": "Medium"
+    },
+    {
+      "name": "Spirit C1",
+      "manufacturer": "Crusader Industries",
+      "category": "Cargo",
+      "price": 120,
+      "size": "Medium"
+    },
+    {
+      "name": "Spirit E1",
+      "manufacturer": "Crusader Industries",
+      "category": "Exploration",
+      "price": 135,
+      "size": "Medium"
+    },
+    {
+      "name": "Starfarer",
+      "manufacturer": "MISC",
+      "category": "Refueling",
+      "price": 300,
+      "size": "Large"
+    },
+    {
+      "name": "Starfarer Gemini",
+      "manufacturer": "MISC",
+      "category": "Refueling",
+      "price": 340,
+      "size": "Large"
+    },
+    {
+      "name": "Talon",
+      "manufacturer": "Esperia",
+      "category": "Fighter",
+      "price": 100,
+      "size": "Small"
+    },
+    {
+      "name": "Talon Shrike",
+      "manufacturer": "Esperia",
+      "category": "Fighter",
+      "price": 110,
+      "size": "Small"
+    },
+    {
+      "name": "Terrapin",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Exploration",
+      "price": 220,
+      "size": "Medium"
+    },
+    {
+      "name": "Valkyrie",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Dropship",
+      "price": 375,
+      "size": "Large"
+    },
+    {
+      "name": "Vanguard Harbinger",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Bomber",
+      "price": 290,
+      "size": "Medium"
+    },
+    {
+      "name": "Vanguard Hoplite",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Dropship",
+      "price": 235,
+      "size": "Medium"
+    },
+    {
+      "name": "Vanguard Sentinel",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 275,
+      "size": "Medium"
+    },
+    {
+      "name": "Vanguard Warden",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 260,
+      "size": "Medium"
+    },
+    {
+      "name": "Vulcan",
+      "manufacturer": "Anvil Aerospace",
+      "category": "Support",
+      "price": 200,
+      "size": "Medium"
+    },
+    {
+      "name": "Vulture",
+      "manufacturer": "Drake Interplanetary",
+      "category": "Salvage",
+      "price": 140,
+      "size": "Small"
+    },
+    {
+      "name": "Warden",
+      "manufacturer": "Aegis Dynamics",
+      "category": "Fighter",
+      "price": 260,
+      "size": "Medium"
+    },
+    {
+      "name": "X1",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Ground Vehicle",
+      "price": 40,
+      "size": "Vehicle"
+    },
+    {
+      "name": "X1 Force",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Ground Vehicle",
+      "price": 45,
+      "size": "Vehicle"
+    },
+    {
+      "name": "X1 Velocity",
+      "manufacturer": "Origin Jumpworks",
+      "category": "Ground Vehicle",
+      "price": 50,
+      "size": "Vehicle"
+    }
+  ]
+}

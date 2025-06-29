@@ -1,0 +1,58 @@
+{
+  "UUID": "b8a352bb-74a8-415b-9e08-77f684ac91b8",
+  "ClassName": "TMBL_Nova",
+  "Name": "Tumbril Nova",
+  "Description": "Manufacturer: Tumbril Land Systems\\nFocus: Combat\\n\\nTumbril's new Nova is a classic battlefield warrior, reimagined for the modern age. This heavy tank offers a devastating combination of weaponry to eliminate threats on the ground and in the air.",
+  "Career": "Ground Combat",
+  "Role": "Heavy Tank",
+  "Manufacturer": {
+    "Code": "TMBL",
+    "Name": "Tumbril Land Systems"
+  },
+  "Size": 1,
+  "Width": 12,
+  "Length": 20,
+  "Height": 11,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 7398,
+    "ExpeditedClaimTime": 4.13,
+    "StandardClaimTime": 12.38
+  },
+  "IsVehicle": false,
+  "IsGravlev": false,
+  "IsSpaceship": true,
+  "Mass": 149950,
+  "ShieldFaceType": "Bubble",
+  "Propulsion": {
+    "FuelCapacity": 0,
+    "FuelIntakeRate": 0,
+    "FuelUsage": {
+      "Main": 0,
+      "Retro": 0,
+      "Vtol": 0,
+      "Maneuvering": 0
+    },
+    "ThrustCapacity": {
+      "Main": 0,
+      "Retro": 0,
+      "Vtol": 0,
+      "Maneuvering": 0
+    }
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 127600,
+  "DamageBeforeDestruction": {
+    "body_mesh": 40000
+  },
+  "DamageBeforeDetach": {
+    "hardpoint_drive_sprocket_right": 800,
+    "hardpoint_wheel_small_right": 800,
+    "hardpoint_drive_sprocket_left": 800,
+    "hardpoint_wheel_small_left": 800
+  },
+  "sourceFile": "tmbl_nova.json",
+  "lastUpdated": "2025-06-29T03:32:14.085Z",
+  "version": "4.2.0-LIVE.9873572"
+}

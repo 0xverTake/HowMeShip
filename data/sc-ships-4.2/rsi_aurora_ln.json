@@ -1,0 +1,145 @@
+{
+  "UUID": "984283ce-dd5f-4807-a7b0-f6fbf053716c",
+  "ClassName": "RSI_Aurora_LN",
+  "Name": "RSI Aurora LN",
+  "Description": "Manufacturer: RSI\\nFocus: Light Fighter\\n\\nWith a more robust shield generator and a pair of additional weapon hard points, the Legionnaire is a dedicated combat fighter, built to handle any obstacle the universe can throw at you.",
+  "Career": "Combat",
+  "Role": "Light Fighter",
+  "Manufacturer": {
+    "Code": "RSI",
+    "Name": "Roberts Space Industries"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 19,
+  "Height": 4.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 2005,
+    "ExpeditedClaimTime": 0.97,
+    "StandardClaimTime": 2.92
+  },
+  "IsVehicle": false,
+  "IsGravlev": false,
+  "IsSpaceship": true,
+  "Mass": 26714,
+  "ShieldFaceType": "Bubble",
+  "QuantumTravel": {
+    "FuelCapacity": 1100,
+    "Range": 120693438665.7889,
+    "Speed": 165000000,
+    "SpoolTime": 4,
+    "PortOlisarToArcCorpTime": 254.105158,
+    "PortOlisarToArcCorpFuel": 382.12587765198,
+    "PortOlisarToArcCorpAndBack": 1.4393162885998285
+  },
+  "Propulsion": {
+    "FuelCapacity": 4500,
+    "FuelIntakeRate": 0,
+    "FuelUsage": {
+      "Main": 32.4625,
+      "Retro": 10.851750000000001,
+      "Vtol": 0,
+      "Maneuvering": 8.875
+    },
+    "ThrustCapacity": {
+      "Main": 3500000,
+      "Retro": 1170000,
+      "Vtol": 0,
+      "Maneuvering": 2840000
+    },
+    "IntakeToMainFuelRatio": 0,
+    "IntakeToTankCapacityRatio": 0,
+    "ManeuveringTimeTillEmpty": 121.95121951219512
+  },
+  "FlightCharacteristics": {
+    "ScmSpeed": 225,
+    "MaxSpeed": 1200,
+    "BoostSpeedForward": 450,
+    "BoostSpeedBackward": 240,
+    "Acceleration": {
+      "Main": 131.01744403683463,
+      "Retro": 43.79725986374186,
+      "Vtol": 0,
+      "Maneuvering": 106.31129744703152
+    },
+    "AccelerationG": {
+      "Main": 13.360061186728867,
+      "Retro": 4.466077596706506,
+      "Vtol": 0,
+      "Maneuvering": 10.840735362945708
+    },
+    "Pitch": 65,
+    "Yaw": 59,
+    "Roll": 146,
+    "PitchBoostMultiplier": 1.2,
+    "YawBoostMultiplier": 1.2,
+    "RollBoostMultiplier": 1.2,
+    "Afterburner": {
+      "PreDelayTime": 0,
+      "RampUpTime": 0.6,
+      "RampDownTime": 0.2,
+      "Capacitor": 20,
+      "IdleCost": 1,
+      "LinearCost": 0,
+      "AngularCost": 0,
+      "RegenPerSec": 0.75,
+      "RegenDelayAfterUse": 0.2
+    },
+    "ZeroToScm": 1.7173285714285713,
+    "ZeroToMax": 9.159085714285712,
+    "ScmToZero": 5.137307692307693,
+    "MaxToZero": 27.39897435897436
+  },
+  "Cargo": 3,
+  "CargoGrids": [
+    {
+      "SCU": 3,
+      "unit": 0,
+      "unitName": "SCU",
+      "x": 1.25,
+      "y": 3.75,
+      "z": 1.25,
+      "minSize": {
+        "x": 1.25,
+        "y": 1.25,
+        "z": 1.25
+      },
+      "maxSize": {
+        "x": 1.25,
+        "y": 2.5,
+        "z": 1.25
+      },
+      "isOpenContainer": true,
+      "isExternalContainer": true,
+      "isClosedContainer": false,
+      "uuid": "cabf3990-93ad-45cb-a6e4-1074ce90bf6b"
+    }
+  ],
+  "CargoSizeLimits": {
+    "MinSize": {
+      "x": 1.25,
+      "y": 1.25,
+      "z": 1.25
+    },
+    "MaxSize": {
+      "x": 1.25,
+      "y": 2.5,
+      "z": 1.25
+    }
+  },
+  "Health": 6290,
+  "DamageBeforeDestruction": {
+    "Body": 1880,
+    "Nose": 1940
+  },
+  "DamageBeforeDetach": {
+    "Wing_Bottom_Left": 480,
+    "Wing_Top_Left": 480,
+    "Wing_Bottom_Right": 480,
+    "Wing_Top_Right": 480
+  },
+  "sourceFile": "rsi_aurora_ln.json",
+  "lastUpdated": "2025-06-29T03:32:06.036Z",
+  "version": "4.2.0-LIVE.9873572"
+}

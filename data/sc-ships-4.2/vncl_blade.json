@@ -1,0 +1,110 @@
+{
+  "UUID": "0d4c5000-ffdb-41f5-9de1-d64252dfef21",
+  "ClassName": "VNCL_Blade",
+  "Name": "Esperia Blade",
+  "Description": "Manufacturer: Esperia\\nFocus: Light Fighter\\n\\nThese light fighters, designation 'Blade', are often used by Vanduul as scouts and first wave assault crafts. They have also served well as skirmisher units due to their speed allowing them to chase down any ships attempting to flee the area. For some decades, United Empire of Earth aggressor squadrons have operated replica Blade fighters produced under exclusive contract by Esperia, Inc.",
+  "Career": "Combat",
+  "Role": "Light Fighter",
+  "Manufacturer": {
+    "Code": "ESPR",
+    "Name": "Esperia"
+  },
+  "Size": 1,
+  "Width": 16.5,
+  "Length": 20.5,
+  "Height": 5.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 5124,
+    "ExpeditedClaimTime": 3.44,
+    "StandardClaimTime": 10.33
+  },
+  "IsVehicle": false,
+  "IsGravlev": false,
+  "IsSpaceship": true,
+  "Mass": 23219,
+  "ShieldFaceType": "Bubble",
+  "QuantumTravel": {
+    "FuelCapacity": 1100,
+    "Range": 102976970604.75566,
+    "Speed": 165000000,
+    "SpoolTime": 4,
+    "PortOlisarToArcCorpTime": 254.105158,
+    "PortOlisarToArcCorpFuel": 447.86796412974,
+    "PortOlisarToArcCorpAndBack": 1.2280405031172847
+  },
+  "Propulsion": {
+    "FuelCapacity": 8000,
+    "FuelIntakeRate": 0,
+    "FuelUsage": {
+      "Main": 129.92,
+      "Retro": 16.0625,
+      "Vtol": 0,
+      "Maneuvering": 127.17500000000001
+    },
+    "ThrustCapacity": {
+      "Main": 3712000,
+      "Retro": 1285000,
+      "Vtol": 0,
+      "Maneuvering": 10174000
+    },
+    "IntakeToMainFuelRatio": 0,
+    "IntakeToTankCapacityRatio": 0,
+    "ManeuveringTimeTillEmpty": 41.34206684495433
+  },
+  "FlightCharacteristics": {
+    "ScmSpeed": 225,
+    "MaxSpeed": 1200,
+    "BoostSpeedForward": 500,
+    "BoostSpeedBackward": 260,
+    "Acceleration": {
+      "Main": 159.86907274215082,
+      "Retro": 55.342607347430985,
+      "Vtol": 0,
+      "Maneuvering": 438.1756320254964
+    },
+    "AccelerationG": {
+      "Main": 16.302108542891897,
+      "Retro": 5.64337539806468,
+      "Vtol": 0,
+      "Maneuvering": 44.681479610824944
+    },
+    "Pitch": 65,
+    "Yaw": 55,
+    "Roll": 200,
+    "PitchBoostMultiplier": 1.2,
+    "YawBoostMultiplier": 1.2,
+    "RollBoostMultiplier": 1.2,
+    "Afterburner": {
+      "PreDelayTime": 0,
+      "RampUpTime": 0.6,
+      "RampDownTime": 0.2,
+      "Capacitor": 20,
+      "IdleCost": 1,
+      "LinearCost": 0,
+      "AngularCost": 0,
+      "RegenPerSec": 0.75,
+      "RegenDelayAfterUse": 0.2
+    },
+    "ZeroToScm": 1.4074016702586207,
+    "ZeroToMax": 7.506142241379311,
+    "ScmToZero": 4.065583657587548,
+    "MaxToZero": 21.683112840466926
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 7250,
+  "DamageBeforeDestruction": {
+    "Nose": 1800,
+    "Body": 1800
+  },
+  "DamageBeforeDetach": {
+    "Wing_Left_Tip": 275,
+    "Wing_Left": 700,
+    "Wing_Right_Tip": 275,
+    "Wing_Right": 700
+  },
+  "sourceFile": "vncl_blade.json",
+  "lastUpdated": "2025-06-29T03:32:14.941Z",
+  "version": "4.2.0-LIVE.9873572"
+}

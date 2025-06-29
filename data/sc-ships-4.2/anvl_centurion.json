@@ -1,0 +1,66 @@
+{
+  "UUID": "27515ffd-04df-413f-8533-34612d906c7d",
+  "ClassName": "ANVL_Centurion",
+  "Name": "Anvil Centurion",
+  "Description": "Manufacturer: Anvil Aerospace\\nFocus: Combat\\n\\nBuilt on Anvil's popular Atlas Platform, the Centurion presents a tactical solution for short-range anti-aircraft operations. Thanks to the Centurion’s custom energy-based AA turret, your forces can establish ground superiority by assuring immediate threats from above are dealt with quickly and efficiently.",
+  "Career": "Ground",
+  "Role": "Ground",
+  "Manufacturer": {
+    "Code": "ANVL",
+    "Name": "Anvil Aerospace"
+  },
+  "Size": 1,
+  "Width": 7,
+  "Length": 17,
+  "Height": 5.5,
+  "Crew": 2,
+  "Insurance": {
+    "ExpeditedCost": 5920,
+    "ExpeditedClaimTime": 2.52,
+    "StandardClaimTime": 7.56
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 134016,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 74.88,
+    "ReverseSpeed": 74.88,
+    "Acceleration": 0.014,
+    "Decceleration": 0.3731,
+    "ZeroToMax": 1481.94,
+    "ZeroToReverse": 1481.94,
+    "MaxToZero": 55.75,
+    "ReverseToZero": 55.75
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 33600,
+  "DamageBeforeDestruction": {
+    "body": 10000,
+    "nose": 10000
+  },
+  "DamageBeforeDetach": {
+    "hardpoint_wheel_left01": 1700,
+    "hardpoint_wheel_left02": 1700,
+    "hardpoint_wheel_left03": 1700,
+    "hardpoint_wheel_left04": 1700,
+    "hardpoint_wheel_right01": 1700,
+    "hardpoint_wheel_right02": 1700,
+    "hardpoint_wheel_right03": 1700,
+    "hardpoint_wheel_right04": 1700
+  },
+  "RemoteTurrets": [
+    {
+      "Size": 9,
+      "Fixed": true,
+      "WeaponSizes": [
+        9
+      ]
+    }
+  ],
+  "sourceFile": "anvl_centurion.json",
+  "lastUpdated": "2025-06-29T03:31:22.443Z",
+  "version": "4.2.0-LIVE.9873572"
+}

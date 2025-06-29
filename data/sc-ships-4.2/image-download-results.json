@@ -1,0 +1,3098 @@
+{
+  "AEGS_Avenger_Stalker": {
+    "name": "Aegis Avenger Stalker",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_stalker_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_stalker_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Avenger_Stalker_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Avenger_Stalker_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Avenger_Titan": {
+    "name": "Aegis Avenger Titan",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_titan_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_titan_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Avenger_Titan_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Avenger_Titan_Piece_4_Promo_191125_CC_v002a.jpg"
+      },
+      {
+        "type": "hangar",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_titan_hangar.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_titan_hangar.jpg"
+      }
+    ]
+  },
+  "AEGS_Avenger_Titan_Renegade": {
+    "name": "Aegis Avenger Titan Renegade",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Avenger_Warlock": {
+    "name": "Aegis Avenger Warlock",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_warlock_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/avenger_warlock_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Avenger_Warlock_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Avenger_Warlock_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Eclipse": {
+    "name": "Aegis Eclipse",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/eclipse_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/eclipse_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Eclipse_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Eclipse_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Eclipse_BIS2950": {
+    "name": "Aegis Eclipse",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Gladius": {
+    "name": "Aegis Gladius",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/gladius_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/gladius_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Gladius_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Gladius_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Gladius_Crocodile": {
+    "name": "Aegis Gladius",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Gladius_Dunlevy": {
+    "name": "Aegis Gladius Dunlevy",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Gladius_PIR": {
+    "name": "Aegis Gladius Pirate",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Gladius_Valiant": {
+    "name": "Aegis Gladius Valiant",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Hammerhead": {
+    "name": "Aegis Hammerhead",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hammerhead_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hammerhead_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hammerhead_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hammerhead_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Hammerhead_Showdown": {
+    "name": "Aegis Hammerhead 2949 Best In Show Edition",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Idris_M": {
+    "name": "Aegis Idris-M",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Idris_P": {
+    "name": "Aegis Idris-P",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Idris_P_FW_25": {
+    "name": "Aegis Idris-P",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Javelin": {
+    "name": "Aegis Javelin",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Reclaimer": {
+    "name": "Aegis Reclaimer",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/reclaimer_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/reclaimer_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Reclaimer_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Reclaimer_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Reclaimer_Showdown": {
+    "name": "Aegis Reclaimer 2949 Best In Show Edition",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Redeemer": {
+    "name": "Aegis Redeemer",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/redeemer_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/redeemer_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Redeemer_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Redeemer_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Retaliator": {
+    "name": "Aegis Retaliator",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/retaliator_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/retaliator_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Retaliator_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Retaliator_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Sabre": {
+    "name": "Aegis Sabre",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/sabre_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/sabre_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Sabre_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Sabre_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Sabre_Comet": {
+    "name": "Aegis Sabre Comet",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Sabre_Firebird": {
+    "name": "Aegis Sabre Firebird",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Sabre_Firebird_Collector_Milt": {
+    "name": "Aegis Sabre Firebird Wikelo War Special",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Sabre_Peregrine": {
+    "name": "Aegis Sabre Peregrine",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Sabre_Peregrine_Collector_Competition": {
+    "name": "Aegis Sabre Peregrine Wikelo Speedy Special",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Sabre_Raven": {
+    "name": "Aegis Sabre Raven",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "AEGS_Vanguard": {
+    "name": "Aegis Vanguard Warden",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_warden_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_warden_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Warden_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Warden_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Vanguard_Harbinger": {
+    "name": "Aegis Vanguard Harbinger",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_harbinger_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_harbinger_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Harbinger_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Harbinger_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Vanguard_Hoplite": {
+    "name": "Aegis Vanguard Hoplite",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_hoplite_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_hoplite_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Hoplite_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Hoplite_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "AEGS_Vanguard_Sentinel": {
+    "name": "Aegis Vanguard Sentinel",
+    "manufacturer": "Aegis Dynamics",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_sentinel_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/vanguard_sentinel_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Sentinel_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vanguard_Sentinel_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Arrow": {
+    "name": "Anvil Arrow",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/arrow_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/arrow_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Arrow_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Arrow_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Asgard": {
+    "name": "Anvil Asgard",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Ballista": {
+    "name": "Anvil Ballista",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Ballista_Dunestalker": {
+    "name": "Anvil Ballista Dunestalker",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Ballista_Snowblind": {
+    "name": "Anvil Ballista Snowblind",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_C8_Pisces": {
+    "name": "Anvil C8 Pisces",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/pisces_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/pisces_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Pisces_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Pisces_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_C8R_Pisces": {
+    "name": "Anvil C8R Pisces Rescue",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_C8X_Pisces_Expedition": {
+    "name": "Anvil C8X Pisces Expedition",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Carrack": {
+    "name": "Anvil Carrack",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/carrack_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/carrack_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Carrack_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Carrack_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Carrack_BIS2950": {
+    "name": "Anvil Carrack",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Carrack_Expedition": {
+    "name": "Anvil Carrack Expedition",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Centurion": {
+    "name": "Anvil Centurion",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Gladiator": {
+    "name": "Anvil Gladiator",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/gladiator_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/gladiator_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Gladiator_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Gladiator_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Hawk": {
+    "name": "Anvil Hawk",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hawk_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hawk_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hawk_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hawk_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7_Mk2_Collector_Mod": {
+    "name": "Anvil F7 Hornet Mk Wikelo",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7A_Mk1": {
+    "name": "Anvil F7A Hornet Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7A_Mk2": {
+    "name": "Anvil F7A Hornet Mk II",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7A_Mk2_Exec_Military": {
+    "name": "Hornet F7A Mk II PYAM Exec",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7A_Mk2_Exec_Stealth": {
+    "name": "Hornet F7A Mk II PYAM Exec",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7C": {
+    "name": "Anvil F7C Hornet Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hornet_f7c_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hornet_f7c_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hornet_F7C_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hornet_F7C_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7C_Mk2": {
+    "name": "Anvil F7C Hornet Mk II",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7C_Wildfire": {
+    "name": "Anvil F7C Hornet Wildfire Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CM": {
+    "name": "Anvil F7C-M Super Hornet Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hornet_f7cm_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hornet_f7cm_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hornet_F7CM_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hornet_F7CM_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CM_Heartseeker": {
+    "name": "Anvil F7C-M Hornet Heartseeker Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CM_Mk2": {
+    "name": "Anvil F7C-M Super Hornet Mk II",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CM_Mk2_Heartseeker": {
+    "name": "Anvil F7C-M Hornet Heartseeker Mk II",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CR": {
+    "name": "Anvil F7C-R Hornet Tracker Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CR_Mk2": {
+    "name": "Anvil F7C-R Hornet Tracker Mk II",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CS": {
+    "name": "Anvil F7C-S Hornet Ghost Mk I",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hornet_F7CS_Mk2": {
+    "name": "Anvil F7C-S Hornet Ghost Mk II",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Hurricane": {
+    "name": "Anvil Hurricane",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hurricane_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hurricane_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hurricane_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hurricane_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8": {
+    "name": "Anvil F8A Lightning",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C": {
+    "name": "Anvil F8C Lightning",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/f8c_lightning_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/f8c_lightning_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/F8C_Lightning_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/F8C_Lightning_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C_Collector_Military": {
+    "name": "Anvil F8C Lightning Wikelo War Special",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C_Collector_Stealth": {
+    "name": "Anvil F8C Lightning Wikelo Sneak Special",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C_Exec": {
+    "name": "Anvil F8C Lightning Executive Edition",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C_Exec_Military": {
+    "name": "F8C Lightning PYAM Exec",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C_Exec_Stealth": {
+    "name": "F8C Lightning PYAM Exec",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Lightning_F8C_Plat": {
+    "name": "Anvil F8C Lightning",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Spartan": {
+    "name": "Anvil Spartan",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Terrapin": {
+    "name": "Anvil Terrapin",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/terrapin_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/terrapin_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Terrapin_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Terrapin_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Terrapin_Medic": {
+    "name": "Anvil Terrapin Medic",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ANVL_Valkyrie": {
+    "name": "Anvil Valkyrie",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/valkyrie_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/valkyrie_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Valkyrie_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Valkyrie_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ANVL_Valkyrie_BIS2950": {
+    "name": "Anvil Valkyrie",
+    "manufacturer": "Anvil Aerospace",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS": {
+    "name": "Argo ATLS",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_GEO": {
+    "name": "Argo ATLS GEO",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_GEO_Collector_Grad01": {
+    "name": "ATLS Snowland Color",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_GEO_Collector_Grad02": {
+    "name": "ATLS Orange Line",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_GEO_Collector_Grad03": {
+    "name": "ATLS Cool Metal Color",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_GEO_IKTI": {
+    "name": "Argo ATLS GEO IKTI",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_IKTI": {
+    "name": "Argo ATLS IKTI",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_ATLS_IKTI_ARGOS": {
+    "name": "Argo ATLS IKTI Rad",
+    "manufacturer": "Unknown",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_CSV_Cargo": {
+    "name": "Argo CSV-SM\\n",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_MOLE": {
+    "name": "Argo MOLE",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_MOLE_Carbon": {
+    "name": "Argo MOLE Carbon",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_MOLE_Talus": {
+    "name": "Argo MOLE Talus",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_MPUV": {
+    "name": "Argo MPUV Cargo",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_MPUV_1T": {
+    "name": "Argo MPUV Tractor",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_MPUV_Transport": {
+    "name": "Argo MPUV Personnel",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_RAFT": {
+    "name": "Argo RAFT",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ARGO_SRV": {
+    "name": "Argo SRV",
+    "manufacturer": "Argo Astronautics",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "BANU_Defender": {
+    "name": "Banu Defender",
+    "manufacturer": "Banu",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_HoverQuad": {
+    "name": "C.O. HoverQuad",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Mustang_Alpha": {
+    "name": "C.O. Mustang Alpha",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Mustang_Alpha_CitizenCon2018": {
+    "name": "C.O. Mustang CitizenCon 2948 Edition",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Mustang_Beta": {
+    "name": "C.O. Mustang Beta",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Mustang_Delta": {
+    "name": "C.O. Mustang Delta",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Mustang_Gamma": {
+    "name": "C.O. Mustang Gamma",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Mustang_Omega": {
+    "name": "C.O. Mustang Omega",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CNOU_Nomad": {
+    "name": "C.O. Nomad",
+    "manufacturer": "Consolidated Outland",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Intrepid": {
+    "name": "Crusader Intrepid",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Intrepid_Collector_Indust": {
+    "name": "Crusader Intrepid Wikelo Work Special",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Spirit_A1": {
+    "name": "Crusader A1 Spirit",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Spirit_C1": {
+    "name": "Crusader C1 Spirit",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Spirit_C1_Civilian": {
+    "name": "Crusader C1 Spirit",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Star_Runner": {
+    "name": "Crusader Mercury Star Runner",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Starfighter_Inferno": {
+    "name": "Crusader Ares Star Fighter Inferno",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Starfighter_Ion": {
+    "name": "Crusader Ares Star Fighter Ion",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Starlifter_A2": {
+    "name": "Crusader A2 Hercules Starlifter",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Starlifter_C2": {
+    "name": "Crusader C2 Hercules Starlifter",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "CRUS_Starlifter_M2": {
+    "name": "Crusader M2 Hercules Starlifter",
+    "manufacturer": "Crusader Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Buccaneer": {
+    "name": "Drake Buccaneer",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/buccaneer_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/buccaneer_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Buccaneer_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Buccaneer_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Caterpillar": {
+    "name": "Drake Caterpillar",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/caterpillar_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/caterpillar_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Caterpillar_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Caterpillar_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Caterpillar_Pirate": {
+    "name": "Drake Caterpillar Pirate",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Corsair": {
+    "name": "Drake Corsair",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/corsair_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/corsair_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Corsair_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Corsair_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Corsair_Exec_Military": {
+    "name": "Corsair PYAM Exec",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Corsair_Exec_StealthIndustrial": {
+    "name": "Corsair PYAM Exec",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Black": {
+    "name": "Drake Cutlass Black",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/cutlass_black_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/cutlass_black_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutlass_Black_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutlass_Black_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Black_BIS2950": {
+    "name": "Drake Cutlass Black",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Black_Exec_Military": {
+    "name": "Cutlass Black PYAM Exec",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Black_Exec_Stealth": {
+    "name": "Cutlass Black PYAM Exec",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Blue": {
+    "name": "Drake Cutlass Blue",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/cutlass_blue_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/cutlass_blue_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutlass_Blue_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutlass_Blue_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Blue_BIS2950": {
+    "name": "Drake Cutlass Blue",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Red": {
+    "name": "Drake Cutlass Red",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/cutlass_red_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/cutlass_red_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutlass_Red_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutlass_Red_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Red_BIS2950": {
+    "name": "Drake Cutlass Red",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutlass_Steel": {
+    "name": "Drake Cutlass Steel",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutter": {
+    "name": "Drake Cutter",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/cutter_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/cutter_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutter_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Cutter_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Cutter_Rambler": {
+    "name": "Drake Cutter Rambler",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Cutter_Scout": {
+    "name": "Drake Cutter Scout",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Dragonfly": {
+    "name": "Drake Dragonfly",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/dragonfly_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/dragonfly_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Dragonfly_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Dragonfly_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Dragonfly_Pink": {
+    "name": "Drake Dragonfly Star Kitten",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Dragonfly_Yellow": {
+    "name": "Drake Dragonfly Yellowjacket",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Golem": {
+    "name": "Drake Golem",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Herald": {
+    "name": "Drake Herald",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/herald_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/herald_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Herald_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Herald_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "DRAK_Mule": {
+    "name": "Drake Mule",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "DRAK_Vulture": {
+    "name": "Drake Vulture",
+    "manufacturer": "Drake Interplanetary",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/vulture_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/vulture_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vulture_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Vulture_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ESPR_Prowler": {
+    "name": "Esperia Prowler",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ESPR_Prowler_Utility": {
+    "name": "Esperia Prowler Utility",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ESPR_Talon": {
+    "name": "Esperia Talon",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ESPR_Talon_Shrike": {
+    "name": "Esperia Talon Shrike",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GAMA_Syulen": {
+    "name": "Gatac Syulen",
+    "manufacturer": "Gatac Manufacture",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GAMA_Syulen_Exec_Military": {
+    "name": "Syulen PYAM Exec",
+    "manufacturer": "Gatac Manufacture",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GAMA_Syulen_Exec_Stealth": {
+    "name": "Syulen PYAM Exec",
+    "manufacturer": "Gatac Manufacture",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GRIN_MTC": {
+    "name": "Greycat MTC",
+    "manufacturer": "Greycat Industrial",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GRIN_PTV": {
+    "name": "Greycat PTV",
+    "manufacturer": "Greycat Industrial",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GRIN_ROC": {
+    "name": "Greycat ROC",
+    "manufacturer": "Greycat Industrial",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GRIN_ROC_DS": {
+    "name": "Greycat ROC-DS",
+    "manufacturer": "Greycat Industrial",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "GRIN_STV": {
+    "name": "Greycat STV",
+    "manufacturer": "Greycat Industrial",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "KRIG_P52_Merlin": {
+    "name": "Kruger P-52 Merlin",
+    "manufacturer": "Kruger Intergalatic",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "KRIG_P72_Archimedes": {
+    "name": "Kruger P-72 Archimedes",
+    "manufacturer": "Kruger Intergalatic",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "KRIG_P72_Archimedes_Emerald": {
+    "name": "Kruger P-72 Archimedes Emerald",
+    "manufacturer": "Kruger Intergalatic",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Fortune": {
+    "name": "MISC Fortune",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Fortune_Collector_Industrial": {
+    "name": "MISC Fortune Wikelo Special",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Freelancer": {
+    "name": "MISC Freelancer",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Freelancer_DUR": {
+    "name": "MISC Freelancer DUR",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_dur_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_dur_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_DUR_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_DUR_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Freelancer_MAX": {
+    "name": "MISC Freelancer MAX",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_max_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_max_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_MAX_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_MAX_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Freelancer_MIS": {
+    "name": "MISC Freelancer MIS",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_mis_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/freelancer_mis_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_MIS_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Freelancer_MIS_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Fury": {
+    "name": "Mirai Fury",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Fury_LX": {
+    "name": "Mirai Fury LX",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Fury_Miru": {
+    "name": "Mirai Fury MX",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Hull_A": {
+    "name": "MISC Hull A",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hull_a_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hull_a_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hull_A_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hull_A_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Hull_C": {
+    "name": "MISC Hull C",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/hull_c_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/hull_c_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hull_C_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Hull_C_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Prospector": {
+    "name": "MISC Prospector",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/prospector_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/prospector_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Prospector_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Prospector_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Razor": {
+    "name": "Mirai Razor",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Razor_EX": {
+    "name": "Mirai Razor EX",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Razor_LX": {
+    "name": "Mirai Razor LX",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Reliant": {
+    "name": "MISC Reliant Kore",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/reliant_kore_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/reliant_kore_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Reliant_Kore_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Reliant_Kore_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Reliant_Mako": {
+    "name": "MISC Reliant Mako",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Reliant_Sen": {
+    "name": "MISC Reliant Sen",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Reliant_Tana": {
+    "name": "MISC Reliant Tana",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Starfarer": {
+    "name": "MISC Starfarer",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/starfarer_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/starfarer_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Starfarer_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Starfarer_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "MISC_Starfarer_Gemini": {
+    "name": "MISC Starfarer Gemini",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Starlancer_Max": {
+    "name": "MISC Starlancer MAX",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Starlancer_Max_Collector_Indust": {
+    "name": "MISC Starlancer MAX Wikelo Work Special",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MISC_Starlancer_TAC": {
+    "name": "MISC Starlancer TAC",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Guardian": {
+    "name": "Mirai Guardian",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Guardian_Military": {
+    "name": "Mirai Guardian Wikelo War Special",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Guardian_MX": {
+    "name": "Mirai Guardian MX",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Guardian_QI": {
+    "name": "Mirai Guardian QI",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Guardian_QI_Collector_Indust": {
+    "name": "Mirai Guardian QI Wikelo Special",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Pulse": {
+    "name": "Mirai Pulse",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "MRAI_Pulse_LX": {
+    "name": "Mirai Pulse LX",
+    "manufacturer": "Mirai",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_100i": {
+    "name": "Origin 100i",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/100i_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/100i_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/100i_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/100i_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_125a": {
+    "name": "Origin 125a",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/125a_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/125a_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/125a_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/125a_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_135c": {
+    "name": "Origin 135c",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/135c_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/135c_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/135c_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/135c_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_300i": {
+    "name": "Origin 300i",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/300i_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/300i_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/300i_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/300i_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_315p": {
+    "name": "Origin 315p",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/315p_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/315p_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/315p_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/315p_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_325a": {
+    "name": "Origin 325a",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/325a_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/325a_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/325a_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/325a_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_350r": {
+    "name": "Origin 350r",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/350r_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/350r_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/350r_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/350r_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_400i": {
+    "name": "Origin 400i",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/400i_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/400i_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/400i_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/400i_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_600i": {
+    "name": "Origin 600i",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/600i_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/600i_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/600i_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/600i_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_600i_BIS2951": {
+    "name": "Origin 600i 2951 BIS",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_600i_Executive_Edition": {
+    "name": "Origin 600i Executive Edition",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_600i_Touring": {
+    "name": "Origin 600i Touring",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_85X": {
+    "name": "Origin 85X Limited",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_890Jump": {
+    "name": "Origin 890 Jump",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/890jump_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/890jump_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/890Jump_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/890Jump_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "ORIG_m50": {
+    "name": "Origin M50 Interceptor",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_X1": {
+    "name": "Origin X1",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_X1_Force": {
+    "name": "Origin X1 Force",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "ORIG_X1_Velocity": {
+    "name": "Origin X1 Velocity",
+    "manufacturer": "Origin Jumpworks",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Aurora_CL": {
+    "name": "RSI Aurora CL",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_cl_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_cl_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_CL_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_CL_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Aurora_ES": {
+    "name": "RSI Aurora ES",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_es_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_es_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_ES_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_ES_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Aurora_LN": {
+    "name": "RSI Aurora LN",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_ln_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_ln_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_LN_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_LN_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Aurora_LX": {
+    "name": "RSI Aurora LX",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_lx_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_lx_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_LX_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_LX_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Aurora_MR": {
+    "name": "RSI Aurora MR",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_mr_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/aurora_mr_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_MR_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Aurora_MR_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Constellation_Andromeda": {
+    "name": "RSI Constellation Andromeda",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_andromeda_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_andromeda_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Andromeda_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Andromeda_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Constellation_Aquila": {
+    "name": "RSI Constellation Aquila",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_aquila_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_aquila_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Aquila_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Aquila_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Constellation_Phoenix": {
+    "name": "RSI Constellation Phoenix",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_phoenix_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_phoenix_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Phoenix_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Phoenix_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Constellation_Phoenix_Emerald": {
+    "name": "RSI Constellation Phoenix Emerald",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Constellation_Taurus": {
+    "name": "RSI Constellation Taurus",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_taurus_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/constellation_taurus_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Taurus_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Constellation_Taurus_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Constellation_Taurus_Military": {
+    "name": "RSI Constellation Taurus Wikelo War Special",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Lynx": {
+    "name": "RSI Lynx",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Mantis": {
+    "name": "RSI Mantis",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/mantis_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/mantis_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Mantis_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Mantis_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Polaris": {
+    "name": "RSI Polaris",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/polaris_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/polaris_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Polaris_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Polaris_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Polaris_Collector_Military": {
+    "name": "RSI Polaris",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Scorpius": {
+    "name": "RSI Scorpius",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "thumbnail",
+        "url": "https://dto9r5vaiz7bu.cloudfront.net/ships/scorpius_storefront.jpg",
+        "error": "HTTP 403: https://dto9r5vaiz7bu.cloudfront.net/ships/scorpius_storefront.jpg"
+      },
+      {
+        "type": "profile",
+        "url": "https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Scorpius_Piece_4_Promo_191125_CC_v002a.jpg",
+        "error": "HTTP 404: https://robertsspaceindustries.com/media/dwbf2req4gz8gr/source/Scorpius_Piece_4_Promo_191125_CC_v002a.jpg"
+      }
+    ]
+  },
+  "RSI_Scorpius_Antares": {
+    "name": "RSI Scorpius Antares",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Scorpius_Stealth": {
+    "name": "RSI Scorpius Wikelo Sneak Special",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Ursa_Medivac": {
+    "name": "RSI Ursa Medivac",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Ursa_Medivac_Stealth": {
+    "name": "RSI Ursa Medivac Wikelo Special",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Ursa_Rover": {
+    "name": "RSI Ursa",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Ursa_Rover_Emerald": {
+    "name": "RSI Ursa Fortuna",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Zeus_CL": {
+    "name": "RSI Zeus Mk II CL",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Zeus_CL_Collector_Indust": {
+    "name": "RSI Zeus Mk II CL",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Zeus_ES": {
+    "name": "RSI Zeus Mk II ES",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "RSI_Zeus_ES_Collector_Indust": {
+    "name": "RSI Zeus Mk II ES Wikelo Work Special",
+    "manufacturer": "Roberts Space Industries",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Cyclone": {
+    "name": "Tumbril Cyclone",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Cyclone_AA": {
+    "name": "Tumbril Cyclone AA",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Cyclone_MT": {
+    "name": "Tumbril Cyclone MT",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Cyclone_RC": {
+    "name": "Tumbril Cyclone RC",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Cyclone_RN": {
+    "name": "Tumbril Cyclone RN",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Cyclone_TR": {
+    "name": "Tumbril Cyclone TR",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Nova": {
+    "name": "Tumbril Nova",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Storm": {
+    "name": "Tumbril Storm",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "TMBL_Storm_AA": {
+    "name": "Tumbril Storm AA",
+    "manufacturer": "Tumbril Land Systems",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "VNCL_Blade": {
+    "name": "Esperia Blade",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "VNCL_Glaive": {
+    "name": "Esperia Glaive",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "VNCL_Scythe": {
+    "name": "Vanduul Scythe",
+    "manufacturer": "Esperia",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "XIAN_Nox": {
+    "name": "Aopoa Nox",
+    "manufacturer": "Aopoa",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "XIAN_Nox_Collector_Mod": {
+    "name": "Aopoa Nox Wikelo Special",
+    "manufacturer": "Aopoa",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "XIAN_Nox_Kue": {
+    "name": "Aopoa Nox Kue",
+    "manufacturer": "Aopoa",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "XIAN_Scout": {
+    "name": "Aopoa Khartu-al",
+    "manufacturer": "Aopoa",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  },
+  "XNAA_SanTokYai": {
+    "name": "Aopoa San'tok.yāi",
+    "manufacturer": "Aopoa",
+    "images": {},
+    "errors": [
+      {
+        "type": "mapping",
+        "error": "Aucune URL d'image définie pour ce vaisseau"
+      }
+    ]
+  }
+}

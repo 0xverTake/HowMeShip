@@ -1,0 +1,210 @@
+{
+  "auroramr": {
+    "name": "Aurora MR",
+    "image": "https://robertsspaceindustries.com/media/b9ka4ohfxyb1sr/source/Aurora_MR_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/b9ka4ohfxyb1sr/store_slideshow_small/Aurora_MR_beauty_visual.jpg",
+    "description": "The Aurora MR is the perfect choice for new Citizens who want to explore the galaxy. Featuring modest accommodations for an individual and basic cargo capacity, the Aurora is a single-person ship with potential for expansion.",
+    "manufacturer": "Roberts Space Industries",
+    "category": "Starter",
+    "specifications": {
+      "Length": "18m",
+      "Beam": "8m", 
+      "Height": "4m",
+      "Mass": "25,300 kg",
+      "Cargo": "0.6 SCU",
+      "Crew": "1",
+      "Max Speed": "1,200 m/s",
+      "Quantum Range": "40.64 AU"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "cutlassblack": {
+    "name": "Cutlass Black",
+    "image": "https://robertsspaceindustries.com/media/1c5hg94ilhcr6r/source/Cutlass-Black-Beauty-Shot.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/1c5hg94ilhcr6r/store_slideshow_small/Cutlass-Black-Beauty-Shot.jpg",
+    "description": "The Cutlass Black is a low-cost, easy-to-maintain solution for citizens who want an affordable, no-frills multi-role ship. The Cutlass Black is the standard variant with the standard weapons package.",
+    "manufacturer": "Drake Interplanetary",
+    "category": "Medium Fighter",
+    "specifications": {
+      "Length": "29m",
+      "Beam": "26.5m",
+      "Height": "10m", 
+      "Mass": "178,000 kg",
+      "Cargo": "46 SCU",
+      "Crew": "1-3",
+      "Max Speed": "1,200 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "2x S2",
+      "Weapons": "3x S3 Hardpoints"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "avengertitan": {
+    "name": "Avenger Titan",
+    "image": "https://robertsspaceindustries.com/media/dwbf2reg3ovarr/source/Avenger_Titan_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/dwbf2reg3ovarr/store_slideshow_small/Avenger_Titan_beauty_visual.jpg",
+    "description": "The Avenger Titan has been designed as a light cargo hauler that can double as an effective fighter. The Titan's cargo hold has been expanded to accommodate 8 SCU of cargo.",
+    "manufacturer": "Aegis Dynamics",
+    "category": "Light Fighter",
+    "specifications": {
+      "Length": "22.5m",
+      "Beam": "16.5m",
+      "Height": "5.5m",
+      "Mass": "53,585 kg", 
+      "Cargo": "8 SCU",
+      "Crew": "1",
+      "Max Speed": "1,200 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "1x S2",
+      "Weapons": "1x S3, 2x S2"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "gladius": {
+    "name": "Gladius",
+    "image": "https://robertsspaceindustries.com/media/g6jbkzlv8rjhtr/source/Gladius_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/g6jbkzlv8rjhtr/store_slideshow_small/Gladius_beauty_visual.jpg",
+    "description": "The Gladius is an older design which has been updated over the years to keep up with modern threats. While it may not be the most robust fighter, it is capable and versatile.",
+    "manufacturer": "Aegis Dynamics",
+    "category": "Light Fighter",
+    "specifications": {
+      "Length": "22m",
+      "Beam": "16m",
+      "Height": "6m",
+      "Mass": "45,000 kg",
+      "Cargo": "0 SCU",
+      "Crew": "1",
+      "Max Speed": "1,350 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "1x S2",
+      "Weapons": "3x S3"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "sabre": {
+    "name": "Sabre",
+    "image": "https://robertsspaceindustries.com/media/b4kkzlv8rjhtr/source/Sabre_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/b4kkzlv8rjhtr/store_slideshow_small/Sabre_beauty_visual.jpg",
+    "description": "The Sabre is a space superiority fighter whose design philosophy balances the need for a robust weapons platform with the ability to evade detection.",
+    "manufacturer": "Aegis Dynamics",
+    "category": "Medium Fighter",
+    "specifications": {
+      "Length": "24m",
+      "Beam": "26m",
+      "Height": "5.5m",
+      "Mass": "75,000 kg",
+      "Cargo": "0 SCU",
+      "Crew": "1",
+      "Max Speed": "1,200 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "2x S2",
+      "Weapons": "4x S3"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "hornet": {
+    "name": "Hornet",
+    "image": "https://robertsspaceindustries.com/media/c6jbkzlv8rjhtr/source/Hornet_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/c6jbkzlv8rjhtr/store_slideshow_small/Hornet_beauty_visual.jpg",
+    "description": "The Hornet is the civilian version of the military's premier space superiority fighter. While not outfitted for combat, the Hornet is still a formidable ship.",
+    "manufacturer": "Anvil Aerospace",
+    "category": "Medium Fighter",
+    "specifications": {
+      "Length": "22.5m",
+      "Beam": "22m",
+      "Height": "6.5m",
+      "Mass": "73,000 kg",
+      "Cargo": "0 SCU",
+      "Crew": "1",
+      "Max Speed": "1,200 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "2x S2",
+      "Weapons": "1x S4, 4x S3"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "300i": {
+    "name": "300i",
+    "image": "https://robertsspaceindustries.com/media/d7jbkzlv8rjhtr/source/300i_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/d7jbkzlv8rjhtr/store_slideshow_small/300i_beauty_visual.jpg",
+    "description": "The 300i is Origin Jumpworks' premiere luxury spacecraft. It is a sleek, silver killer that sends as much of a message with its silhouette as it does with its weaponry.",
+    "manufacturer": "Origin Jumpworks",
+    "category": "Touring",
+    "specifications": {
+      "Length": "27m",
+      "Beam": "16m",
+      "Height": "8m",
+      "Mass": "65,000 kg",
+      "Cargo": "8 SCU",
+      "Crew": "1",
+      "Max Speed": "1,200 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "1x S2",
+      "Weapons": "2x S3"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "freelancer": {
+    "name": "Freelancer",
+    "image": "https://robertsspaceindustries.com/media/e8jbkzlv8rjhtr/source/Freelancer_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/e8jbkzlv8rjhtr/store_slideshow_small/Freelancer_beauty_visual.jpg",
+    "description": "The Freelancer is the most popular ship in the MISC lineup. The Freelancer is a multi-crew ship designed for long-distance cargo hauling.",
+    "manufacturer": "Musashi Industrial & Starflight Concern",
+    "category": "Medium Freight",
+    "specifications": {
+      "Length": "38m",
+      "Beam": "26m",
+      "Height": "9m",
+      "Mass": "340,000 kg",
+      "Cargo": "66 SCU",
+      "Crew": "1-4",
+      "Max Speed": "1,050 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "2x S2",
+      "Weapons": "4x S3"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "constellation": {
+    "name": "Constellation",
+    "image": "https://robertsspaceindustries.com/media/f9jbkzlv8rjhtr/source/Constellation_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/f9jbkzlv8rjhtr/store_slideshow_small/Constellation_beauty_visual.jpg",
+    "description": "The Constellation is a multi-crew ship that has been the backbone of the RSI fleet for decades. It features a large cargo hold and impressive firepower.",
+    "manufacturer": "Roberts Space Industries",
+    "category": "Large Multi-role",
+    "specifications": {
+      "Length": "61m",
+      "Beam": "26m",
+      "Height": "14m",
+      "Mass": "1,020,000 kg",
+      "Cargo": "96 SCU",
+      "Crew": "1-5",
+      "Max Speed": "950 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "2x S3",
+      "Weapons": "4x S4, 2x S2"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  },
+  "caterpillar": {
+    "name": "Caterpillar",
+    "image": "https://robertsspaceindustries.com/media/g0jbkzlv8rjhtr/source/Caterpillar_beauty_visual.jpg",
+    "thumbnail": "https://robertsspaceindustries.com/media/g0jbkzlv8rjhtr/store_slideshow_small/Caterpillar_beauty_visual.jpg",
+    "description": "The Caterpillar is a modular, multi-crew cargo hauler manufactured by Drake Interplanetary. Designed for long-haul cargo transport.",
+    "manufacturer": "Drake Interplanetary",
+    "category": "Large Freight",
+    "specifications": {
+      "Length": "111m",
+      "Beam": "26m",
+      "Height": "12m",
+      "Mass": "4,310,000 kg",
+      "Cargo": "576 SCU",
+      "Crew": "1-5",
+      "Max Speed": "950 m/s",
+      "Quantum Range": "40.64 AU",
+      "Shields": "2x S3",
+      "Weapons": "4x S4"
+    },
+    "lastUpdated": "2025-06-29T04:00:00.000Z"
+  }
+}

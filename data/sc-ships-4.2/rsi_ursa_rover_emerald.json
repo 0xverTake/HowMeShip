@@ -1,0 +1,62 @@
+{
+  "UUID": "953f8277-43a5-4f88-b139-ee997ee5c482",
+  "ClassName": "RSI_Ursa_Rover_Emerald",
+  "Name": "RSI Ursa Fortuna",
+  "Description": "Manufacturer: RSI\\nFocus: Exploration\\n\\nFortune favors the bold. The most trusted name in all-terrain exploration embodies the essence of good fortune and success with this commemorative limited-edition Ursa Rover.",
+  "Career": "Ground",
+  "Role": "Ground",
+  "Manufacturer": {
+    "Code": "RSI",
+    "Name": "Roberts Space Industries"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 2,
+  "Insurance": {
+    "ExpeditedCost": 1015,
+    "ExpeditedClaimTime": 0.84,
+    "StandardClaimTime": 2.53
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 50356.630000000005,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 86.4,
+    "ReverseSpeed": 86.4,
+    "Acceleration": 0.2415,
+    "Decceleration": 1.3239,
+    "ZeroToMax": 99.39,
+    "ZeroToReverse": 99.39,
+    "MaxToZero": 18.13,
+    "ReverseToZero": 18.13
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 25200,
+  "DamageBeforeDestruction": {
+    "Body": 13000
+  },
+  "DamageBeforeDetach": {
+    "wheel1": 1500,
+    "wheel1_center": 150,
+    "wheel1_mudguard": 150,
+    "wheel2": 1500,
+    "wheel2_center": 150,
+    "wheel2_mudguard": 150,
+    "wheel3": 1500,
+    "wheel3_mudguard": 150,
+    "wheel4": 1500,
+    "wheel4_mudguard": 150,
+    "wheel5": 1500,
+    "wheel5_mudguard": 150,
+    "wheel6": 1500,
+    "wheel6_mudguard": 150
+  },
+  "sourceFile": "rsi_ursa_rover_emerald.json",
+  "lastUpdated": "2025-06-29T03:32:11.114Z",
+  "version": "4.2.0-LIVE.9873572"
+}

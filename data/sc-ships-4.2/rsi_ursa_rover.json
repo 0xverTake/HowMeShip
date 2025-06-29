@@ -1,0 +1,62 @@
+{
+  "UUID": "8c375d7e-0e44-42e8-b84b-c8d6b2e1256c",
+  "ClassName": "RSI_Ursa_Rover",
+  "Name": "RSI Ursa",
+  "Description": "Manufacturer: RSI\\nFocus: Exploration\\n\\nBuilt by RSI specifically for the planetside explorer, the Ursa Rover offers civilians military-grade all-terrain capabilities and stands as the rugged standard in ground-based scouting, mapping and discovery applications.",
+  "Career": "Ground",
+  "Role": "Ground",
+  "Manufacturer": {
+    "Code": "RSI",
+    "Name": "Roberts Space Industries"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 2,
+  "Insurance": {
+    "ExpeditedCost": 1015,
+    "ExpeditedClaimTime": 0.84,
+    "StandardClaimTime": 2.53
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 50356.630000000005,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 86.4,
+    "ReverseSpeed": 86.4,
+    "Acceleration": 0.2415,
+    "Decceleration": 1.3239,
+    "ZeroToMax": 99.39,
+    "ZeroToReverse": 99.39,
+    "MaxToZero": 18.13,
+    "ReverseToZero": 18.13
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 25200,
+  "DamageBeforeDestruction": {
+    "Body": 13000
+  },
+  "DamageBeforeDetach": {
+    "wheel1": 1500,
+    "wheel1_center": 150,
+    "wheel1_mudguard": 150,
+    "wheel2": 1500,
+    "wheel2_center": 150,
+    "wheel2_mudguard": 150,
+    "wheel3": 1500,
+    "wheel3_mudguard": 150,
+    "wheel4": 1500,
+    "wheel4_mudguard": 150,
+    "wheel5": 1500,
+    "wheel5_mudguard": 150,
+    "wheel6": 1500,
+    "wheel6_mudguard": 150
+  },
+  "sourceFile": "rsi_ursa_rover.json",
+  "lastUpdated": "2025-06-29T03:32:10.807Z",
+  "version": "4.2.0-LIVE.9873572"
+}

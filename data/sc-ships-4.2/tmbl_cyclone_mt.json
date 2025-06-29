@@ -1,0 +1,59 @@
+{
+  "UUID": "bda93768-c01f-40b4-a92e-f31876cd33d0",
+  "ClassName": "TMBL_Cyclone_MT",
+  "Name": "Tumbril Cyclone MT",
+  "Description": "Manufacturer: Tumbril Land Systems \\nFocus: Combat\\n\\nFollowing the success of the initial release of the Cyclone, Tumbril has taken your feedback and expanded their popular line of tactical vehicles with the all new Cyclone MT. Outfitted with a combination gun and missile turret, this module offers increased combat options in the field.",
+  "Career": "Ground",
+  "Role": "Combat",
+  "Manufacturer": {
+    "Code": "TMBL",
+    "Name": "Tumbril Land Systems"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 1605,
+    "ExpeditedClaimTime": 0.68,
+    "StandardClaimTime": 2.03
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 27764,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 121.82,
+    "ReverseSpeed": 121.82,
+    "Acceleration": 0.3878,
+    "Decceleration": 0.5002,
+    "ZeroToMax": 87.26,
+    "ZeroToReverse": 87.26,
+    "MaxToZero": 67.65,
+    "ReverseToZero": 67.65
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 6901,
+  "DamageBeforeDestruction": {
+    "body": 2000
+  },
+  "DamageBeforeDetach": {
+    "mud_flap_bl": 25,
+    "rear_armor_plating_left": 50,
+    "mud_flap_fl": 25,
+    "mud_flap_fr": 25,
+    "mud_flap_br": 25,
+    "rear_armor_plating_right": 50,
+    "hood": 1,
+    "wheelBL": 800,
+    "wheelBR": 800,
+    "wheelFL": 800,
+    "wheelFR": 800
+  },
+  "sourceFile": "tmbl_cyclone_mt.json",
+  "lastUpdated": "2025-06-29T03:32:13.007Z",
+  "version": "4.2.0-LIVE.9873572"
+}

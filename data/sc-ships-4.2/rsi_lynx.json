@@ -1,0 +1,60 @@
+{
+  "UUID": "4c034eef-329c-4336-850e-49bfb1f06a15",
+  "ClassName": "RSI_Lynx",
+  "Name": "RSI Lynx",
+  "Description": "Manufacturer: RSI\\nFocus: Exploration\\n\\nRSI designed the Lynx Rover to be a vehicle capable of exploring a wide variety of terrains while still delivering a top-rated and finely tuned driving experience.",
+  "Career": "Ground",
+  "Role": "Transporter",
+  "Manufacturer": {
+    "Code": "RSI",
+    "Name": "Roberts Space Industries"
+  },
+  "Size": 1,
+  "Width": 5.7,
+  "Length": 7.75,
+  "Height": 3.5,
+  "Crew": 2,
+  "Insurance": {
+    "ExpeditedCost": 1080,
+    "ExpeditedClaimTime": 0.9,
+    "StandardClaimTime": 2.7
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 45156.630000000056,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 97.2,
+    "ReverseSpeed": 97.2,
+    "Acceleration": 0.2777,
+    "Decceleration": 1.5133,
+    "ZeroToMax": 97.23,
+    "ZeroToReverse": 97.23,
+    "MaxToZero": 17.84,
+    "ReverseToZero": 17.84
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 22700,
+  "DamageBeforeDestruction": {
+    "body": 11000
+  },
+  "DamageBeforeDetach": {
+    "wheel1": 1500,
+    "wheel1_mudguard": 150,
+    "wheel2": 1500,
+    "wheel2_mudguard": 150,
+    "wheel3": 1500,
+    "wheel3_mudguard": 150,
+    "wheel4": 1500,
+    "wheel4_mudguard": 150,
+    "wheel5": 1500,
+    "wheel5_mudguard": 150,
+    "wheel6": 1500,
+    "wheel6_mudguard": 150
+  },
+  "sourceFile": "rsi_lynx.json",
+  "lastUpdated": "2025-06-29T03:32:08.405Z",
+  "version": "4.2.0-LIVE.9873572"
+}

@@ -1,0 +1,59 @@
+{
+  "UUID": "0194943d-1164-4b5f-a85e-79ebc0ebe621",
+  "ClassName": "TMBL_Cyclone_AA",
+  "Name": "Tumbril Cyclone AA",
+  "Description": "Manufacturer: Tumbril Land Systems \\nFocus: Combat\\n\\nA battlefield equalizer, the Cyclone AA comes equipped with a surface-to-air missile and countermeasure package to provide cover for ground troops against airborne targets.",
+  "Career": "Ground",
+  "Role": "Support",
+  "Manufacturer": {
+    "Code": "TMBL",
+    "Name": "Tumbril Land Systems"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 1345,
+    "ExpeditedClaimTime": 0.68,
+    "StandardClaimTime": 2.03
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 28264,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 124.42,
+    "ReverseSpeed": 124.42,
+    "Acceleration": 0.3809,
+    "Decceleration": 0.4914,
+    "ZeroToMax": 90.72,
+    "ZeroToReverse": 90.72,
+    "MaxToZero": 70.33,
+    "ReverseToZero": 70.33
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 6901,
+  "DamageBeforeDestruction": {
+    "body": 2000
+  },
+  "DamageBeforeDetach": {
+    "mud_flap_bl": 25,
+    "rear_armor_plating_left": 50,
+    "mud_flap_fl": 25,
+    "mud_flap_fr": 25,
+    "mud_flap_br": 25,
+    "rear_armor_plating_right": 50,
+    "hood": 1,
+    "wheelBL": 800,
+    "wheelBR": 800,
+    "wheelFL": 800,
+    "wheelFR": 800
+  },
+  "sourceFile": "tmbl_cyclone_aa.json",
+  "lastUpdated": "2025-06-29T03:32:12.742Z",
+  "version": "4.2.0-LIVE.9873572"
+}

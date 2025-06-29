@@ -1,0 +1,59 @@
+{
+  "UUID": "f80914cf-643e-4b7e-b715-eaf9aa572954",
+  "ClassName": "TMBL_Cyclone_TR",
+  "Name": "Tumbril Cyclone TR",
+  "Description": "Manufacturer: Tumbril Land Systems \\nFocus: Combat\\n\\nDesigned for militia and security use, the Cyclone TR module features upgraded armor and a single Human-operated turret capable of mounting a Size 1 weapon and a responsive 360° field of fire.",
+  "Career": "Ground",
+  "Role": "Combat",
+  "Manufacturer": {
+    "Code": "TMBL",
+    "Name": "Tumbril Land Systems"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 810,
+    "ExpeditedClaimTime": 0.68,
+    "StandardClaimTime": 2.03
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 27964,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 134.78,
+    "ReverseSpeed": 134.78,
+    "Acceleration": 0.385,
+    "Decceleration": 0.4967,
+    "ZeroToMax": 97.24,
+    "ZeroToReverse": 97.24,
+    "MaxToZero": 75.38,
+    "ReverseToZero": 75.38
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 6901,
+  "DamageBeforeDestruction": {
+    "body": 2000
+  },
+  "DamageBeforeDetach": {
+    "mud_flap_bl": 25,
+    "rear_armor_plating_left": 50,
+    "mud_flap_fl": 25,
+    "mud_flap_fr": 25,
+    "mud_flap_br": 25,
+    "rear_armor_plating_right": 50,
+    "hood": 1,
+    "wheelBL": 800,
+    "wheelBR": 800,
+    "wheelFL": 800,
+    "wheelFR": 800
+  },
+  "sourceFile": "tmbl_cyclone_tr.json",
+  "lastUpdated": "2025-06-29T03:32:13.831Z",
+  "version": "4.2.0-LIVE.9873572"
+}

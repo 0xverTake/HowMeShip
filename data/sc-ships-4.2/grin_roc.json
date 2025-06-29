@@ -1,0 +1,53 @@
+{
+  "UUID": "62e33393-5d68-4191-aba5-3b81ce4f3bf9",
+  "ClassName": "GRIN_ROC",
+  "Name": "Greycat ROC",
+  "Description": "Manufacturer: Greycat Industrial\\nFocus: Mining\\n\\nBy focusing on the essentials of terrestrial-based mining, Greycat Industrial designed their hardworking, no-nonsense ROC (Remote Ore Collector) to complement the miners who use it. From its precision gimbaled mining arm to its all-terrain wheels, this solo-operated vehicle shows how important it is to have the right tool for the job.",
+  "Career": "Ground",
+  "Role": "Light Mining",
+  "Manufacturer": {
+    "Code": "GRIN",
+    "Name": "Greycat Industrial"
+  },
+  "Size": 1,
+  "Width": 3.9,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 1460,
+    "ExpeditedClaimTime": 1.11,
+    "StandardClaimTime": 3.54
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 22470,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 126,
+    "ReverseSpeed": 126,
+    "Acceleration": 0.302,
+    "Decceleration": 0.3179,
+    "ZeroToMax": 115.9,
+    "ZeroToReverse": 115.9,
+    "MaxToZero": 110.1,
+    "ReverseToZero": 110.1
+  },
+  "Cargo": 1.2,
+  "CargoGrids": [],
+  "Health": 9400,
+  "DamageBeforeDestruction": {
+    "rollcage_main": 2250
+  },
+  "DamageBeforeDetach": {
+    "hardpoint_wheel_FL": 1500,
+    "hardpoint_wheel_FR": 1500,
+    "hardpoint_wheel_RL": 1500,
+    "hardpoint_wheel_RR": 1500,
+    "side_panel_right": 50
+  },
+  "sourceFile": "grin_roc.json",
+  "lastUpdated": "2025-06-29T03:31:50.641Z",
+  "version": "4.2.0-LIVE.9873572"
+}

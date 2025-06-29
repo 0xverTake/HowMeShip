@@ -1,0 +1,59 @@
+{
+  "UUID": "b389839d-fdf9-4c41-850a-4e7461250304",
+  "ClassName": "TMBL_Cyclone_RN",
+  "Name": "Tumbril Cyclone RN",
+  "Description": "Manufacturer: Tumbril Land Systems \\nFocus: Recon\\n\\nStay mobile and aware with the Cyclone RN. This light reconnaissance vehicle is the perfect solution for scouting runs, providing fast and detailed scans of terrain as well as beacon placement.",
+  "Career": "Ground",
+  "Role": "Exploration",
+  "Manufacturer": {
+    "Code": "TMBL",
+    "Name": "Tumbril Land Systems"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 810,
+    "ExpeditedClaimTime": 0.68,
+    "StandardClaimTime": 2.03
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 28264,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 142.56,
+    "ReverseSpeed": 142.56,
+    "Acceleration": 0.3809,
+    "Decceleration": 0.4914,
+    "ZeroToMax": 103.96,
+    "ZeroToReverse": 103.96,
+    "MaxToZero": 80.59,
+    "ReverseToZero": 80.59
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 6901,
+  "DamageBeforeDestruction": {
+    "body": 2000
+  },
+  "DamageBeforeDetach": {
+    "mud_flap_bl": 25,
+    "rear_armor_plating_left": 50,
+    "mud_flap_fl": 25,
+    "mud_flap_fr": 25,
+    "mud_flap_br": 25,
+    "rear_armor_plating_right": 50,
+    "hood": 1,
+    "wheelBL": 800,
+    "wheelBR": 800,
+    "wheelFL": 800,
+    "wheelFR": 800
+  },
+  "sourceFile": "tmbl_cyclone_rn.json",
+  "lastUpdated": "2025-06-29T03:32:13.556Z",
+  "version": "4.2.0-LIVE.9873572"
+}

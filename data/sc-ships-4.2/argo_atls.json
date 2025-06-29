@@ -1,0 +1,45 @@
+{
+  "UUID": "09c9fa95-5b5a-4200-9ff8-3b288df9925b",
+  "ClassName": "ARGO_ATLS",
+  "Name": "Argo ATLS",
+  "Description": "Manufacturer: Argo Astronautics\\nFocus: Cargo\\n \\nThanks to a rigorous process of real-world testing, this next-generation assisted transport loading system from Argo Astronautics features a fully redesigned cockpit that makes wearing this latest ATLS power suit feel more like a natural extension of the user’s body than ever before. With smoother leg actuators than previous versions alongside the powerful integrated tractor beam, transferring bulky cargo efficiently and precisely has never been easier.",
+  "Career": "",
+  "Role": "",
+  "Size": 1,
+  "Width": 0,
+  "Length": 0,
+  "Height": 0,
+  "Insurance": {
+    "ExpeditedCost": 850,
+    "ExpeditedClaimTime": 0.63,
+    "StandardClaimTime": 2.5
+  },
+  "IsVehicle": false,
+  "IsGravlev": false,
+  "IsSpaceship": true,
+  "Mass": 1440,
+  "Propulsion": {
+    "FuelCapacity": 0,
+    "FuelIntakeRate": 0,
+    "FuelUsage": {
+      "Main": 0,
+      "Retro": 0,
+      "Vtol": 0,
+      "Maneuvering": 0
+    },
+    "ThrustCapacity": {
+      "Main": 0,
+      "Retro": 0,
+      "Vtol": 0,
+      "Maneuvering": 0
+    }
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 0,
+  "DamageBeforeDestruction": [],
+  "DamageBeforeDetach": [],
+  "sourceFile": "argo_atls.json",
+  "lastUpdated": "2025-06-29T03:31:31.642Z",
+  "version": "4.2.0-LIVE.9873572"
+}

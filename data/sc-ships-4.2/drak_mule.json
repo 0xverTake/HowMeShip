@@ -1,0 +1,91 @@
+{
+  "UUID": "fb484074-f33f-4977-a052-2937e8508acc",
+  "ClassName": "DRAK_Mule",
+  "Name": "Drake Mule",
+  "Description": "Manufacturer: Drake Interplanetary\\nFocus: Cargo\\n\\nThe six-wheeled Drake Mule is a dependable workhorse for all sorts of loading and hauling jobs. Whether transporting cargo over rough terrain or ferrying it onto larger vessels and cargo decks, the Mule sees even the toughest contracts through to the end. Plain and simple.",
+  "Career": "Ground",
+  "Role": "Ground",
+  "Manufacturer": {
+    "Code": "DRAK",
+    "Name": "Drake Interplanetary"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 1215,
+    "ExpeditedClaimTime": 1.0125,
+    "StandardClaimTime": 3.04
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 7553.1,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 32,
+    "ReverseSpeed": 7,
+    "Acceleration": 8,
+    "Decceleration": 12,
+    "ZeroToMax": 4,
+    "ZeroToReverse": 0.875,
+    "MaxToZero": 2.6666666666666665,
+    "ReverseToZero": 0.5833333333333334
+  },
+  "Cargo": 1,
+  "CargoGrids": [
+    {
+      "SCU": 1,
+      "unit": 0,
+      "unitName": "SCU",
+      "x": 1.25,
+      "y": 1.25,
+      "z": 1.25,
+      "minSize": {
+        "x": 1.25,
+        "y": 1.25,
+        "z": 1.25
+      },
+      "maxSize": {
+        "x": 1.25,
+        "y": 1.25,
+        "z": 1.25
+      },
+      "isOpenContainer": true,
+      "isExternalContainer": false,
+      "isClosedContainer": false,
+      "uuid": "62b83f8e-cae7-47f0-85d4-192eef06ac1a"
+    }
+  ],
+  "CargoSizeLimits": {
+    "MinSize": {
+      "x": 1.25,
+      "y": 1.25,
+      "z": 1.25
+    },
+    "MaxSize": {
+      "x": 1.25,
+      "y": 1.25,
+      "z": 1.25
+    }
+  },
+  "Health": 10600,
+  "DamageBeforeDestruction": {
+    "Body": 2000
+  },
+  "DamageBeforeDetach": {
+    "hardpoint_wheel_FL": 800,
+    "hardpoint_wheel_ML": 800,
+    "hardpoint_wheel_FR": 800,
+    "hardpoint_wheel_MR": 800,
+    "hardpoint_wheel_RR": 800,
+    "hardpoint_wheel_RL": 800,
+    "sidetray_right": 200,
+    "sidetray_left": 200
+  },
+  "sourceFile": "drak_mule.json",
+  "lastUpdated": "2025-06-29T03:31:47.703Z",
+  "version": "4.2.0-LIVE.9873572"
+}

@@ -1,0 +1,97 @@
+{
+  "UUID": "e8efe30c-5a1e-4ca2-a956-424b352f80c2",
+  "ClassName": "ARGO_CSV_Cargo",
+  "Name": "Argo CSV-SM\\n",
+  "Description": "Manufacturer: Argo Astronautics\\nFocus: Cargo\\n\\nYou got your plot of land, you’ve got the right construction materials, and now you’re ready to watch your dreams take shape. The ideal companion to the CSV-FM, the CSV Supply Model provides additional storage for all the resources required to build your next settlement.\\n",
+  "Career": "Ground",
+  "Role": "Ground",
+  "Manufacturer": {
+    "Code": "ARGO",
+    "Name": "Argo Astronautics"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 190,
+    "ExpeditedClaimTime": 0.08,
+    "StandardClaimTime": 0.33
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 14754.599999999999,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 47.07,
+    "ReverseSpeed": 47.07,
+    "Acceleration": 0.4633,
+    "Decceleration": 2.3221,
+    "ZeroToMax": 28.23,
+    "ZeroToReverse": 28.23,
+    "MaxToZero": 5.63,
+    "ReverseToZero": 5.63
+  },
+  "Cargo": 4,
+  "CargoGrids": [
+    {
+      "SCU": 4,
+      "unit": 0,
+      "unitName": "SCU",
+      "x": 2.5,
+      "y": 2.5,
+      "z": 1.25,
+      "minSize": {
+        "x": 2.5,
+        "y": 2.5,
+        "z": 1.25
+      },
+      "maxSize": {
+        "x": 2.5,
+        "y": 2.5,
+        "z": 1.25
+      },
+      "isOpenContainer": true,
+      "isExternalContainer": true,
+      "isClosedContainer": false,
+      "uuid": "180d4b6c-c62e-4ca8-80d7-0ca0c17d6672"
+    }
+  ],
+  "CargoSizeLimits": {
+    "MinSize": {
+      "x": 2.5,
+      "y": 2.5,
+      "z": 1.25
+    },
+    "MaxSize": {
+      "x": 2.5,
+      "y": 2.5,
+      "z": 1.25
+    }
+  },
+  "Health": 16100,
+  "DamageBeforeDestruction": {
+    "body": 3500
+  },
+  "DamageBeforeDetach": {
+    "front_barbreakbottom_right": 250,
+    "front_panelbreak_bumper_left": 250,
+    "front_panelbreak_bumper_right": 250,
+    "front_barbreakbottom_left": 250,
+    "AAsus_wheel_RR": 2000,
+    "AAsus_wheel_RL": 2000,
+    "wheel_rl_mudguard": 150,
+    "wheel_rr_mudguard": 150,
+    "rear_panelbreak_left": 250,
+    "body_panelbreak_right": 250,
+    "AAsus_wheel_FL": 2000,
+    "AAsus_wheel_FR": 2000,
+    "wheel_fl_mudguard": 150,
+    "wheel_fr_mudguard": 150
+  },
+  "sourceFile": "argo_csv_cargo.json",
+  "lastUpdated": "2025-06-29T03:31:33.729Z",
+  "version": "4.2.0-LIVE.9873572"
+}

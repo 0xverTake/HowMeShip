@@ -1,0 +1,59 @@
+{
+  "UUID": "064951d7-3dd0-49c2-8b88-d2d7f809633e",
+  "ClassName": "TMBL_Cyclone_RC",
+  "Name": "Tumbril Cyclone RC",
+  "Description": "Manufacturer: Tumbril Land Systems \\nFocus: Racing\\n\\nFor those who like to push the limits of speed, the Cyclone RC features a modified intake system to allow for controlled bursts of speed as well as tools to customize handling.",
+  "Career": "Ground",
+  "Role": "Racing",
+  "Manufacturer": {
+    "Code": "TMBL",
+    "Name": "Tumbril Land Systems"
+  },
+  "Size": 1,
+  "Width": 8.75,
+  "Length": 6,
+  "Height": 3.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 1135,
+    "ExpeditedClaimTime": 0.95,
+    "StandardClaimTime": 2.84
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 28264,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 137.38,
+    "ReverseSpeed": 137.38,
+    "Acceleration": 0.3809,
+    "Decceleration": 0.4914,
+    "ZeroToMax": 100.18,
+    "ZeroToReverse": 100.18,
+    "MaxToZero": 77.66,
+    "ReverseToZero": 77.66
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 6901,
+  "DamageBeforeDestruction": {
+    "body": 2000
+  },
+  "DamageBeforeDetach": {
+    "mud_flap_bl": 25,
+    "rear_armor_plating_left": 50,
+    "mud_flap_fl": 25,
+    "mud_flap_fr": 25,
+    "mud_flap_br": 25,
+    "rear_armor_plating_right": 50,
+    "hood": 1,
+    "wheelBL": 800,
+    "wheelBR": 800,
+    "wheelFL": 800,
+    "wheelFR": 800
+  },
+  "sourceFile": "tmbl_cyclone_rc.json",
+  "lastUpdated": "2025-06-29T03:32:13.268Z",
+  "version": "4.2.0-LIVE.9873572"
+}

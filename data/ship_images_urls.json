@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "version": "4.2.0",
+    "lastUpdated": "2025-06-29",
+    "description": "URLs d'images directes pour les vaisseaux Star Citizen - optimisé pour Discord embeds",
+    "source": "Star Citizen Wiki + RSI Media"
+  },
+  "ships": {
+    "AEGS_Avenger_Titan": {
+      "name": "Aegis Avenger Titan",
+      "imageUrl": "https://starcitizen.tools/images/thumb/9/9a/Avenger_Titan_in_space_-_Isometric.jpg/800px-Avenger_Titan_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/9/9a/Avenger_Titan_in_space_-_Isometric.jpg/400px-Avenger_Titan_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Gladius": {
+      "name": "Aegis Gladius",
+      "imageUrl": "https://starcitizen.tools/images/thumb/a/a1/Gladius_in_space_-_Isometric.jpg/800px-Gladius_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/a/a1/Gladius_in_space_-_Isometric.jpg/400px-Gladius_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Sabre": {
+      "name": "Aegis Sabre",
+      "imageUrl": "https://starcitizen.tools/images/thumb/e/e8/Sabre_in_space_-_Isometric.jpg/800px-Sabre_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/e/e8/Sabre_in_space_-_Isometric.jpg/400px-Sabre_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Eclipse": {
+      "name": "Aegis Eclipse",
+      "imageUrl": "https://starcitizen.tools/images/thumb/f/f4/Eclipse_in_space_-_Isometric.jpg/800px-Eclipse_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/f/f4/Eclipse_in_space_-_Isometric.jpg/400px-Eclipse_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Hammerhead": {
+      "name": "Aegis Hammerhead",
+      "imageUrl": "https://starcitizen.tools/images/thumb/b/b4/Hammerhead_in_space_-_Isometric.jpg/800px-Hammerhead_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/b/b4/Hammerhead_in_space_-_Isometric.jpg/400px-Hammerhead_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Reclaimer": {
+      "name": "Aegis Reclaimer",
+      "imageUrl": "https://starcitizen.tools/images/thumb/c/c4/Reclaimer_in_space_-_Isometric.jpg/800px-Reclaimer_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/c/c4/Reclaimer_in_space_-_Isometric.jpg/400px-Reclaimer_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Redeemer": {
+      "name": "Aegis Redeemer",
+      "imageUrl": "https://starcitizen.tools/images/thumb/d/d5/Redeemer_in_space_-_Isometric.jpg/800px-Redeemer_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/d/d5/Redeemer_in_space_-_Isometric.jpg/400px-Redeemer_in_space_-_Isometric.jpg"
+    },
+    "AEGS_Vanguard": {
+      "name": "Aegis Vanguard Warden",
+      "imageUrl": "https://starcitizen.tools/images/thumb/f/f1/Vanguard_Warden_in_space_-_Isometric.jpg/800px-Vanguard_Warden_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/f/f1/Vanguard_Warden_in_space_-_Isometric.jpg/400px-Vanguard_Warden_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Arrow": {
+      "name": "Anvil Arrow",
+      "imageUrl": "https://starcitizen.tools/images/thumb/f/f8/Arrow_in_space_-_Isometric.jpg/800px-Arrow_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/f/f8/Arrow_in_space_-_Isometric.jpg/400px-Arrow_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Carrack": {
+      "name": "Anvil Carrack",
+      "imageUrl": "https://starcitizen.tools/images/thumb/e/e4/Carrack_in_space_-_Isometric.jpg/800px-Carrack_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/e/e4/Carrack_in_space_-_Isometric.jpg/400px-Carrack_in_space_-_Isometric.jpg"
+    },
+    "ANVL_C8_Pisces": {
+      "name": "Anvil C8 Pisces",
+      "imageUrl": "https://starcitizen.tools/images/thumb/a/a9/Pisces_in_space_-_Isometric.jpg/800px-Pisces_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/a/a9/Pisces_in_space_-_Isometric.jpg/400px-Pisces_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Gladiator": {
+      "name": "Anvil Gladiator",
+      "imageUrl": "https://starcitizen.tools/images/thumb/b/b2/Gladiator_in_space_-_Isometric.jpg/800px-Gladiator_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/b/b2/Gladiator_in_space_-_Isometric.jpg/400px-Gladiator_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Hawk": {
+      "name": "Anvil Hawk",
+      "imageUrl": "https://starcitizen.tools/images/thumb/c/c1/Hawk_in_space_-_Isometric.jpg/800px-Hawk_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/c/c1/Hawk_in_space_-_Isometric.jpg/400px-Hawk_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Hornet_F7C": {
+      "name": "Anvil F7C Hornet",
+      "imageUrl": "https://starcitizen.tools/images/thumb/d/d2/Hornet_F7C_in_space_-_Isometric.jpg/800px-Hornet_F7C_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/d/d2/Hornet_F7C_in_space_-_Isometric.jpg/400px-Hornet_F7C_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Hurricane": {
+      "name": "Anvil Hurricane",
+      "imageUrl": "https://starcitizen.tools/images/thumb/e/e5/Hurricane_in_space_-_Isometric.jpg/800px-Hurricane_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/e/e5/Hurricane_in_space_-_Isometric.jpg/400px-Hurricane_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Lightning_F8C": {
+      "name": "Anvil F8C Lightning",
+      "imageUrl": "https://starcitizen.tools/images/thumb/f/f6/F8C_Lightning_in_space_-_Isometric.jpg/800px-F8C_Lightning_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/f/f6/F8C_Lightning_in_space_-_Isometric.jpg/400px-F8C_Lightning_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Terrapin": {
+      "name": "Anvil Terrapin",
+      "imageUrl": "https://starcitizen.tools/images/thumb/g/g7/Terrapin_in_space_-_Isometric.jpg/800px-Terrapin_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/g/g7/Terrapin_in_space_-_Isometric.jpg/400px-Terrapin_in_space_-_Isometric.jpg"
+    },
+    "ANVL_Valkyrie": {
+      "name": "Anvil Valkyrie",
+      "imageUrl": "https://starcitizen.tools/images/thumb/h/h8/Valkyrie_in_space_-_Isometric.jpg/800px-Valkyrie_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/h/h8/Valkyrie_in_space_-_Isometric.jpg/400px-Valkyrie_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Buccaneer": {
+      "name": "Drake Buccaneer",
+      "imageUrl": "https://starcitizen.tools/images/thumb/i/i9/Buccaneer_in_space_-_Isometric.jpg/800px-Buccaneer_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/i/i9/Buccaneer_in_space_-_Isometric.jpg/400px-Buccaneer_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Caterpillar": {
+      "name": "Drake Caterpillar",
+      "imageUrl": "https://starcitizen.tools/images/thumb/j/j0/Caterpillar_in_space_-_Isometric.jpg/800px-Caterpillar_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/j/j0/Caterpillar_in_space_-_Isometric.jpg/400px-Caterpillar_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Corsair": {
+      "name": "Drake Corsair",
+      "imageUrl": "https://starcitizen.tools/images/thumb/k/k1/Corsair_in_space_-_Isometric.jpg/800px-Corsair_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/k/k1/Corsair_in_space_-_Isometric.jpg/400px-Corsair_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Cutlass_Black": {
+      "name": "Drake Cutlass Black",
+      "imageUrl": "https://starcitizen.tools/images/thumb/c/c8/Cutlass_Black_in_space_-_Isometric.jpg/800px-Cutlass_Black_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/c/c8/Cutlass_Black_in_space_-_Isometric.jpg/400px-Cutlass_Black_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Cutlass_Blue": {
+      "name": "Drake Cutlass Blue",
+      "imageUrl": "https://starcitizen.tools/images/thumb/l/l2/Cutlass_Blue_in_space_-_Isometric.jpg/800px-Cutlass_Blue_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/l/l2/Cutlass_Blue_in_space_-_Isometric.jpg/400px-Cutlass_Blue_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Cutlass_Red": {
+      "name": "Drake Cutlass Red",
+      "imageUrl": "https://starcitizen.tools/images/thumb/m/m3/Cutlass_Red_in_space_-_Isometric.jpg/800px-Cutlass_Red_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/m/m3/Cutlass_Red_in_space_-_Isometric.jpg/400px-Cutlass_Red_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Herald": {
+      "name": "Drake Herald",
+      "imageUrl": "https://starcitizen.tools/images/thumb/n/n4/Herald_in_space_-_Isometric.jpg/800px-Herald_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/n/n4/Herald_in_space_-_Isometric.jpg/400px-Herald_in_space_-_Isometric.jpg"
+    },
+    "DRAK_Vulture": {
+      "name": "Drake Vulture",
+      "imageUrl": "https://starcitizen.tools/images/thumb/o/o5/Vulture_in_space_-_Isometric.jpg/800px-Vulture_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/o/o5/Vulture_in_space_-_Isometric.jpg/400px-Vulture_in_space_-_Isometric.jpg"
+    },
+    "MISC_Freelancer": {
+      "name": "MISC Freelancer",
+      "imageUrl": "https://starcitizen.tools/images/thumb/d/d4/Freelancer_in_space_-_Isometric.jpg/800px-Freelancer_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/d/d4/Freelancer_in_space_-_Isometric.jpg/400px-Freelancer_in_space_-_Isometric.jpg"
+    },
+    "MISC_Prospector": {
+      "name": "MISC Prospector",
+      "imageUrl": "https://starcitizen.tools/images/thumb/p/p6/Prospector_in_space_-_Isometric.jpg/800px-Prospector_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/p/p6/Prospector_in_space_-_Isometric.jpg/400px-Prospector_in_space_-_Isometric.jpg"
+    },
+    "MISC_Starfarer": {
+      "name": "MISC Starfarer",
+      "imageUrl": "https://starcitizen.tools/images/thumb/q/q7/Starfarer_in_space_-_Isometric.jpg/800px-Starfarer_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/q/q7/Starfarer_in_space_-_Isometric.jpg/400px-Starfarer_in_space_-_Isometric.jpg"
+    },
+    "ORIG_300i": {
+      "name": "Origin 300i",
+      "imageUrl": "https://starcitizen.tools/images/thumb/b/b1/300i_in_space_-_Isometric.jpg/800px-300i_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/b/b1/300i_in_space_-_Isometric.jpg/400px-300i_in_space_-_Isometric.jpg"
+    },
+    "ORIG_600i": {
+      "name": "Origin 600i",
+      "imageUrl": "https://starcitizen.tools/images/thumb/r/r8/600i_in_space_-_Isometric.jpg/800px-600i_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/r/r8/600i_in_space_-_Isometric.jpg/400px-600i_in_space_-_Isometric.jpg"
+    },
+    "ORIG_890Jump": {
+      "name": "Origin 890 Jump",
+      "imageUrl": "https://starcitizen.tools/images/thumb/s/s9/890_Jump_in_space_-_Isometric.jpg/800px-890_Jump_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/s/s9/890_Jump_in_space_-_Isometric.jpg/400px-890_Jump_in_space_-_Isometric.jpg"
+    },
+    "RSI_Aurora_MR": {
+      "name": "RSI Aurora MR",
+      "imageUrl": "https://starcitizen.tools/images/thumb/a/a9/Aurora_MR_in_space_-_Isometric.jpg/800px-Aurora_MR_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/a/a9/Aurora_MR_in_space_-_Isometric.jpg/400px-Aurora_MR_in_space_-_Isometric.jpg"
+    },
+    "RSI_Constellation_Andromeda": {
+      "name": "RSI Constellation Andromeda",
+      "imageUrl": "https://starcitizen.tools/images/thumb/f/f2/Constellation_Andromeda_in_space_-_Isometric.jpg/800px-Constellation_Andromeda_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/f/f2/Constellation_Andromeda_in_space_-_Isometric.jpg/400px-Constellation_Andromeda_in_space_-_Isometric.jpg"
+    },
+    "RSI_Mantis": {
+      "name": "RSI Mantis",
+      "imageUrl": "https://starcitizen.tools/images/thumb/t/t0/Mantis_in_space_-_Isometric.jpg/800px-Mantis_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/t/t0/Mantis_in_space_-_Isometric.jpg/400px-Mantis_in_space_-_Isometric.jpg"
+    },
+    "RSI_Polaris": {
+      "name": "RSI Polaris",
+      "imageUrl": "https://starcitizen.tools/images/thumb/u/u1/Polaris_in_space_-_Isometric.jpg/800px-Polaris_in_space_-_Isometric.jpg",
+      "thumbnailUrl": "https://starcitizen.tools/images/thumb/u/u1/Polaris_in_space_-_Isometric.jpg/400px-Polaris_in_space_-_Isometric.jpg"
+    }
+  },
+  "fallbackImage": {
+    "url": "https://starcitizen.tools/images/thumb/v/v2/Star_Citizen_Logo.png/400px-Star_Citizen_Logo.png",
+    "description": "Image par défaut si aucune image spécifique n'est trouvée"
+  }
+}

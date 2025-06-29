@@ -1,0 +1,58 @@
+{
+  "UUID": "9c26b25a-9285-4074-94d1-163db2aa8cbb",
+  "ClassName": "ANVL_Spartan",
+  "Name": "Anvil Spartan",
+  "Description": "Manufacturer: Anvil Aerospace\\nFocus: Troop Transport\\n\\nBuilt on Anvil’s robust Atlas Platform, the same chassis used for their devastating Ballista air defense system, the Spartan is a fully armored transport outfitted with eight jump seats. The Spartan’s rugged frame makes it perfect for all kinds of terrain, and its remote Gatling turret helps clear the area for easier deployment.",
+  "Career": "Ground",
+  "Role": "Ground",
+  "Manufacturer": {
+    "Code": "ANVL",
+    "Name": "Anvil Aerospace"
+  },
+  "Size": 1,
+  "Width": 7,
+  "Length": 17,
+  "Height": 5.5,
+  "Crew": 1,
+  "Insurance": {
+    "ExpeditedCost": 2475,
+    "ExpeditedClaimTime": 2.06,
+    "StandardClaimTime": 6.19
+  },
+  "IsVehicle": true,
+  "IsGravlev": false,
+  "IsSpaceship": false,
+  "Mass": 136016,
+  "ShieldFaceType": "Bubble",
+  "DriveCharacteristics": {
+    "TopSpeed": 74.88,
+    "ReverseSpeed": 74.88,
+    "Acceleration": 0.0168,
+    "Decceleration": 0.3676,
+    "ZeroToMax": 1240.85,
+    "ZeroToReverse": 1240.85,
+    "MaxToZero": 56.58,
+    "ReverseToZero": 56.58
+  },
+  "Cargo": 0,
+  "CargoGrids": [],
+  "Health": 37801,
+  "DamageBeforeDestruction": {
+    "nose": 10000,
+    "body": 10000
+  },
+  "DamageBeforeDetach": {
+    "WheelFrontLeft01DmgGroup": 1,
+    "hardpoint_wheel_left01": 1700,
+    "hardpoint_wheel_left03": 1700,
+    "hardpoint_wheel_left04": 1700,
+    "hardpoint_wheel_left02": 1700,
+    "hardpoint_wheel_right01": 1700,
+    "hardpoint_wheel_right02": 1700,
+    "hardpoint_wheel_right03": 1700,
+    "hardpoint_wheel_right04": 1700
+  },
+  "sourceFile": "anvl_spartan.json",
+  "lastUpdated": "2025-06-29T03:31:30.322Z",
+  "version": "4.2.0-LIVE.9873572"
+}
