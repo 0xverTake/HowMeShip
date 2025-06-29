@@ -42,7 +42,7 @@ nano .env  # ou votre éditeur préféré
 
 Remplacer `your_discord_bot_token_here` par votre token Discord :
 ```env
-DISCORD_TOKEN=MTIzNDU2Nzg5MDEyMzQ1Njc4.GhIjKl.MnOpQrStUvWxYzAbCdEfGhIjKlMnOpQrStUvWx
+DISCORD_TOKEN=
 ```
 
 ### 5. Inviter le bot sur votre serveur
